@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/plugin/jquery/jquery-3.5.1.min.js"></script>
+    <title>ABC BOOTCAMP</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="menu">
+                <h1>
+                    <a href="/">
+                        <div class="header_logo"></div>
+                    </a>
+                </h1>
+                <a href="#" class="all" onclick="allMenu()"></a>
+                <div class="nav">
+                    <h2>
+                        <a href="/">ABC BOOTCAMP</a>
+                    </h2>
+                    <nav>
+                        <ul>
+                            <li><a href="/about/">About</a></li>
+                            <li>
+                                <a href="/data_explorer/">교육소개</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/data_explorer/">데이터 탐험가</a></li>
+                                    <li><a href="/mentoring/">ABC 프로젝트 멘토링</a></li>
+                                    <li><a href="/deep_diver/">딥 다이버</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/abc_story">교육후기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_story">News & 후기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/faq/">FAQ</a></li>
+                            <li>
+                                <a href="/abc_education/">신청하기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_education/">교육신청</a></li>
+                                    <li><a href="/abcbootcamp/confirm_training/">신청확인</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="close" onclick="allMenuClose()">close</a>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="mv" class="main_visual">
+            <div class="wrap">
+                <div class="inner">
+                    <div class="slogan_title">
+                        <div class="fix_title">
+                            Explore
+                            <span><img src="./img/visual_icon.svg"></span>
+                        </div>
+                        <div class="change_words">
+                            <div class="word_box">
+                                <span class="change_word on">
+                                    <span class="char">데</span>
+                                    <span class="char">이</span>
+                                    <span class="char">터</span>
+                                    <span class="char"> 탐</span>
+                                    <span class="char">험</span>
+                                    <span class="char">가</span>
+                                    <span class="char">;</span>
+                                </span>
+                                <span class="change_word">
+                                    <span class="char">A</span>
+                                    <span class="char">B</span>
+                                    <span class="char">C</span>
+                                    <span class="char"> 프</span>
+                                    <span class="char">로</span>
+                                    <span class="char">젝</span>
+                                    <span class="char">트</span>
+                                    <span class="char"> 멘</span>
+                                    <span class="char">토</span>
+                                    <span class="char">링</span>
+                                    <span class="char">;</span>
+                                </span>
+                                <span class="change_word">
+                                    <span class="char">딥</span>
+                                    <span class="char">다</span>
+                                    <span class="char">이</span>    
+                                    <span class="char">버</span>
+                                    <span class="char">;</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>ABC 부트캠프는 IT기업에서 진행하는 전문적인 IT 교육 프로그램입니다.<br>
+                        실질적인 경험과 프로그램으로 나만의 부스터를 만들어 보세요.</p>
+                    <a href="#">다양한 후기 영상 보러가기</a><!-- 유튜브 사이트로 이동 -->
+                </div> 
+                <video class="edu_video asset" muted playsinline preload="metadata" poster>
+                    <source src="./video/abc_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
