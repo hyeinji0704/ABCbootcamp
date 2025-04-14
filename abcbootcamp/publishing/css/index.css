@@ -95,7 +95,7 @@
 a {
     text-decoration: none;
 }
-ul, ol, li {
+ul, ol, li, p, h2 {
     list-style: none;
     padding: 0;   
     margin: 0;
@@ -486,9 +486,6 @@ header .sns > ul li {
 
 .main {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
 }
 
 .main_visual {
@@ -506,12 +503,7 @@ header .sns > ul li {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(6, 6, 6, 0.00) 0%, rgba(6, 6, 6, 0.00) 29.77%, rgba(6, 6, 6, 0.30) 62.96%, #060606 100%);
-    z-index: 1;
-}
-.main_visual .wrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    z-index: -10;
 }
 .main_visual .inner {
     display: flex;
@@ -531,12 +523,13 @@ header .sns > ul li {
     top: 0;
     width: 135%;
     display: block;
-    z-index: -1;
+    z-index: -50;
 }
 .main_visual .slogan_title {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    gap: 16px;
 }
 .main_visual .fix_title {
     font-size: 100px;
@@ -545,6 +538,8 @@ header .sns > ul li {
     display: flex;
     align-items: center;
     color: #ffffff;
+    width: fit-content;
+    gap: 27px;
 }
 .main_visual .fix_title span {
     padding-top: 7px;
@@ -559,8 +554,9 @@ header .sns > ul li {
     position: relative;
     display: flex;
     height: 131px;
-    align-items: center;
     gap: 19px;
+    width: 100%;
+    max-width: 925px; /*임의로 지정*/
 }
 
 .main_visual .change_words::before,
@@ -585,12 +581,13 @@ header .sns > ul li {
     font-size: 100px;
     font-style: normal;
     font-weight: 900;
-    letter-spacing: -0.1em;
+    letter-spacing: -0.02em;
     display: inline-block;
-    min-width: 0;
     transition: width 0.8s ease-in-out;
     overflow: hidden;
     height: 131px;
+    width: 100%;
+    line-height: 1.3;
 }
 
 .main_visual .change_words .change_word {
@@ -662,22 +659,332 @@ header .sns > ul li {
 }
 
 .main_visual p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.55px;
+    line-height: 1.4;
+    margin-top: 5px;
+    margin-bottom: 46px;
 }
 
 .main_visual a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: #333;
-    padding: 15px 30px;
-    border-radius: 30px;
+    display: inline-flex;
+    padding: 18px 30px;
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-size: 18px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #0844FF 0%, #052999 100%);
+    color: #FFFFFF;
+    transition: all .3s ease-in-out;
 }
 
 .main_visual a:hover {
-    background-color: #555;
+    background: #061441;
+}
+
+.section {
+    position: relative;
+}
+
+.section .section-title {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Interop-SemiBold", sans-serif;
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 600;
+    position: relative;
+    padding: 220px 0 60px 0;
+}
+.abc_edu01, .abc_edu02 {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 720px;
+}
+.abc_edu_img {
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    background: #010915;
+}
+.abc_edu01 .abc_edu_img img {
+    width: 547px;
+    height: auto;
+}
+.abc_edu_text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+    color: #ffffff;
+    position: relative;
+}
+.abc_edu_text h2 {
+    font-size: 46px;
+    font-weight: 600;
+}
+.abc_edu_text p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.4; 
+}
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.info-item {
+    background: rgba(146, 181, 255, 0.2);
+    border-radius: 4px;
+    padding: 4px 14px 4px 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.info-text {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: -0.012em;
+    font-weight: 400;
+}
+.edu_more {
+    background: linear-gradient(
+        90deg,
+        rgba(8, 68, 255, 1) 0%,
+        rgba(5, 41, 153, 1) 100%
+    ),
+    linear-gradient(to left, #0844ff, #0844ff);
+    border-radius: 50px;
+    font-size: 18px;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+}
+.edu_more a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    gap: 10px;
+    padding: 15px 30px 15px 30px;
+}
+.edu_more a:hover {
+    border-radius: 50px;
+    background: #061441;
+}
+.edu_more img {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+.abc_review .section-title {
+    text-align: left;
+}
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    padding-bottom: 20px;
+}
+.edu_more02 {
+    margin-top: 20px;
+}
+.edu_more02 a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    padding: 20px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    border: 1.5px solid #83BBFF;
+}
+.edu_more02 a:hover {
+    border: 1.5px solid #1F2A38;
+    background: #1F2A38;
+}
+.list .popup .popup-slide { 
+    width:469px; 
+    margin:0 18px;
+}
+.list .popup .popup-slide a {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 32px 45px 34px 38px;
+    border-radius: 12px;
+    background: #161823;
+    height: 380px;
+}
+.list .popup .popup-slide a strong { 
+    display:block; 
+    margin:10px 0; 
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.list .popup .popup-slide a .review_profile { 
+    display:flex; 
+    align-items: center;
+    gap:12px; 
+}
+.list .popup .popup-slide a span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.list .popup .popup-slide a .profile_name {
+    font-weight: 200;
+    color: rgba(255, 255, 255, .8);
+    margin-top: 2px;
+}
+.btn_wrap {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn { 
+    position: relative;
+    width: 80px;
+    height: 100%;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 68px;
+  height: 68px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.slick-prev:before, .slick-next:before {
+    line-height: 1;
+    opacity: .75;
+}
+.slick-prev:before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/review_prev.svg") no-repeat center center;
+    content: "";
+}
+.slick-next:before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/review_next.svg") no-repeat center center;
+    content: "";
+}
+.abc_advantages .section-title {
+    text-align: center;
+    width: 100%;
+}
+.abc_advantages .section-title strong {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 600;
+}
+.abc_advantages p {
+    color: #77B6FF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+.section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.section-list .list_text span {
+    color: #E3E3E3;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+.section-list .list_text p {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+}
+.section-list .list_text p em {
+    color: #77B6FF;
+    font-style: normal;
+}
+.section-list .list {
+    border: 1px solid rgba(78, 98, 145, 0.5);
+    border-radius: 20px;
+}
+.section-list .list .edu_more03 a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 63px;
+}
+.section-list .list01 {
+    padding-left: 43px;
+    height: 300px;
+    background: url(../img/adventage01.png) center center no-repeat;    
+}
+.section-list .list01 .list_text {
+    margin-top: 52px;
+}
+.section-list .list02 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.section-list .list02 .list {
+    padding: 35px 0 40px 43px;
+    width: calc(50% - 10px);
+    background-color: #131419;
+}
+.section-list .list02 p {
+    margin-top: 8px;
+}
+.section-list .list_img {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 70px;
+    margin-top: 10px;
+}
+.section-list .list_img.img02 {
+    padding-right: 50px;
 }
