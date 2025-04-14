@@ -988,3 +988,14 @@ header .sns > ul li {
 .section-list .list_img.img02 {
     padding-right: 50px;
 }
+
+.abc_news .section-content {
+    padding-bottom: 60px;
+}
+.abc_news .section-title {
+    text-align: left;
+    padding: 220px 0 22px 0;
+}
+.news_list {
+    display: flex;
+}
