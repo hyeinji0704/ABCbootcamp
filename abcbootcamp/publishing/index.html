@@ -66,48 +66,64 @@
                             Explore
                             <span><img src="./img/visual_icon.svg"></span>
                         </div>
-                        <div class="change_words">
-                            <div class="word_box">
-                                <span class="change_word ">
-                                    <span class="char">데</span>
-                                    <span class="char">이</span>
-                                    <span class="char">터</span>
-                                    <span class="char"> 탐</span>
-                                    <span class="char">험</span>
-                                    <span class="char">가</span>
-                                    <span class="char">;</span>
-                                </span>
-                                <span class="change_word on">
-                                    <span class="char">A</span>
-                                    <span class="char">B</span>
-                                    <span class="char">C</span>
-                                    <span class="char"> 프</span>
-                                    <span class="char">로</span>
-                                    <span class="char">젝</span>
-                                    <span class="char">트</span>
-                                    <span class="char"> 멘</span>
-                                    <span class="char">토</span>
-                                    <span class="char">링</span>
-                                    <span class="char">;</span>
-                                </span>
-                                <span class="change_word">
-                                    <span class="char">딥</span>
-                                    <span class="char">다</span>
-                                    <span class="char">이</span>    
-                                    <span class="char">버</span>
-                                    <span class="char">;</span>
-                                </span>
+                        <div class="slogan_tit">
+                            <div class="change_words">
+                                <div class="word_box">
+                                    <span class="change_word ">
+                                        <span class="char">데</span>
+                                        <span class="char">이</span>
+                                        <span class="char">터</span>
+                                        <span class="char"> 탐</span>
+                                        <span class="char">험</span>
+                                        <span class="char">가</span>
+                                        <span class="char semicolon">;</span>
+                                    </span>
+                                    <span class="change_word">
+                                        <span class="char">A</span>
+                                        <span class="char">B</span>
+                                        <span class="char">C</span>
+                                        <span class="char"> 프</span>
+                                        <span class="char">로</span>
+                                        <span class="char">젝</span>
+                                        <span class="char">트</span>
+                                        <span class="char"> 멘</span>
+                                        <span class="char">토</span>
+                                        <span class="char">링</span>
+                                        <span class="char semicolon">;</span>
+                                    </span>
+                                    <span class="change_word">
+                                        <span class="char">딥</span>
+                                        <span class="char">다</span>
+                                        <span class="char">이</span>    
+                                        <span class="char">버</span>
+                                        <span class="char semicolon">;</span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
                     <p>ABC 부트캠프는 IT기업에서 진행하는 전문적인 IT 교육 프로그램입니다.<br>
                         실질적인 경험과 프로그램으로 나만의 부스터를 만들어 보세요.</p>
-                    <a href="#">다양한 후기 영상 보러가기</a><!-- 유튜브 사이트로 이동 -->
+                    <div class="main_btn_wrap">
+                        <a href="#" target="_blank" title="새창">
+                            <span class="main_btn_container">
+                                <span class="main_btn main_btn_ani"></span>
+                                <span>
+                                    <span class="main_btn_title">다양한 후기 영상 보러가기</span>
+                                </span>
+                            </span>
+                        </a><!-- 유튜브 사이트로 이동 -->
+                    </div>
                 </div> 
-                <video class="edu_video asset" muted playsinline preload="metadata" poster>
+                <video class="edu_video asset" autoplay muted playsinline loop preload="none"
+                poster="./img/abc_video_thumbnail.png">
                     <source src="./video/abc_video.mp4" type="video/mp4">
                 </video>
+                <div class="main_scroll_wrap">
+                    <div class="main_scroll">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section abc_education">
@@ -135,9 +151,17 @@
                                   <div class="info-text">방학과정</div>
                               </div>
                           </div>
-                          <div class="edu_more">
-                            <a href="/data_explorer/">자세히 보기<img class="keyboard-arrow-right" src="./img/edu_arrow_right.svg" /></a>
-                          </div>
+                          <div class="main_btn_wrap edu_more">
+                            <a href="/data_explorer/">
+                                <span class="main_btn_container">
+                                    <span class="main_btn main_btn_ani"></span>
+                                    <span class="main_btn_text">
+                                        <span class="main_btn_title">자세히 보기</span>
+                                        <img src="./img/edu_arrow_right.svg" />
+                                    </span>
+                                </span>
+                            </a>
+                           </div>
                       </div>
                   </div>
                   <div class="abc_edu02">
@@ -157,9 +181,17 @@
                                   <div class="info-text">매월 진행</div>
                               </div>
                           </div>
-                          <div class="edu_more">
-                            <a href="/mentoring/">자세히 보기<img src="./img/edu_arrow_right.svg" /></a>
-                          </div>
+                          <div class="main_btn_wrap edu_more">
+                            <a href="/mentoring/">
+                                <span class="main_btn_container">
+                                    <span class="main_btn main_btn_ani"></span>
+                                    <span class="main_btn_text">
+                                        <span class="main_btn_title">자세히 보기</span>
+                                        <img src="./img/edu_arrow_right.svg" />
+                                    </span>
+                                </span>
+                            </a>
+                           </div>
                       </div>
                       <div class="abc_edu_img"><img src="./img/edu_mentoring.svg"></div>
                   </div>
@@ -171,9 +203,17 @@
                     <div class="section-title">ABC 부트캠프를 통해<br />
                       성장한 우리들의 이야기
                     </div>
-                    <div class="edu_more02">
-                        <a href="/abc_story">수료생 스토리 자세히 보기<img src="./img/edu_arrow_right.svg" /></a>
-                    </div>
+                    <div class="main_btn_wrap edu_more edu_more02">
+                        <a href="/abc_story">
+                            <span class="main_btn_container">
+                                <span class="main_btn02 main_btn_ani "></span>
+                                <span class="main_btn_text">
+                                    <span class="main_btn_title">수료생 스토리 자세히 보기</span>
+                                    <img src="./img/edu_arrow_right.svg" />
+                                </span>
+                            </span>
+                        </a>
+                       </div>
                     <div class="btn_wrap">
                         <div class="btn">
                             <button type="button" class="slick-prev"></button>
@@ -331,45 +371,147 @@
             <div class="wrap">
                 <div class="section-content">
                     <div class="section-title">ABC 스토리 뉴스</div>
-                    <div class="edu_more02">
-                        <a href="/abc_story">수료생 스토리 자세히 보기<img src="./img/edu_arrow_right.svg" /></a>
+                    <div class="main_btn_wrap edu_more edu_more02">
+                        <a href="/abc_story">
+                            <span class="main_btn_container">
+                                <span class="main_btn02 main_btn_ani"></span>
+                                <span class="main_btn_text">
+                                    <span class="main_btn_title">ABC 뉴스 보러가기</span>
+                                    <img src="./img/edu_arrow_right.svg" />
+                                </span>
+                            </span>
+                        </a>
                     </div>
                 </div>
                 <div class="news_list">
-                    <div class="news_list01">
+                    <div class="news_cnt news_list01">
                         <a href="#">
-                            <img src="./img/news01.png">
-                            <strong class="hastags">#프로젝트 멘토링   #ABC교육</strong>
+                            <div class="news_img"><img src="./img/news01.png"></div>
+                            <div class="hastags">
+                                <p>#프로젝트 멘토링</p>
+                                <p>#ABC교육</p>
+                            </div>
                             <span class="news_title">[ABC 프로젝트 멘토링] 4월 (IT/광고·마케팅) 과정</span>
                             <div class="edu_more03">
-                                <a href="#">자세히 보기<img src="./img/edu_arrow_right.svg" /></a>
+                                <a href="#">자세히 보기<img src="./img/edu_arrow_right_blue.svg" /></a>
                             </div>
                         </a>
                     </div>
-                    <div class="news_list02">
+                    <div class="news_cnt news_list02">
                         <a href="#">
-                            <img src="./img/news02.png">
-                            <strong class="hastags">#프로젝트 멘토링   #ABC교육</strong>
+                            <div class="news_img"><img src="./img/news02.png"></div>
+                            <div class="hastags">
+                                <p>#프로젝트 멘토링</p>
+                                <p>#ABC교육</p>
+                            </div>
                             <span class="news_title">[ABC 프로젝트 멘토링] 4월 (IT/광고·마케팅) 과정</span>
                             <div class="edu_more03">
-                                <a href="#">자세히 보기<img src="./img/edu_arrow_right.svg" /></a>
+                                <a href="#">자세히 보기<img src="./img/edu_arrow_right_blue.svg" /></a>
                             </div>
                         </a>
                     </div>
-                    <div class="news_list03">
+                    <div class="news_cnt news_list03">
                         <a href="#">
-                            <img src="./img/news03.png">
-                            <strong class="hastags">#프로젝트 멘토링   #ABC교육</strong>
+                            <div class="news_img"><img src="./img/news03.png"></div>
+                            <div class="hastags">
+                                <p>#프로젝트 멘토링</p>
+                                <p>#ABC교육</p>
+                            </div>
                             <span class="news_title">[ABC 프로젝트 멘토링] 4월 (IT/광고·마케팅) 과정</span>
                             <div class="edu_more03">
-                                <a href="#">자세히 보기<img src="./img/edu_arrow_right.svg" /></a>
+                                <a href="#">자세히 보기<img src="./img/edu_arrow_right_blue.svg" /></a>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>   
-            
+        </section>
+        <section class="section abc_contact">
+            <div class="wrap">
+                <div class="section-content">
+                    <div class="section-title">
+                        <p>Contact us</p>
+                        <strong>ABC 부트캠프와 함께 나아가는 내일</strong>
+                    </div>
+                    <div class="main_btn_wrap edu_more edu_more02 edu_contact_btn">
+                        <a href="#" target="_blank" title="새창">
+                            <span class="main_btn_container">
+                                <span class="main_btn main_btn_ani"></span>
+                                <span>
+                                    <span class="main_btn_title">FAQ</span>
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="main_btn_container">
+                                <span class="main_btn02 main_btn_ani"></span>
+                                <span>
+                                    <span class="main_btn_title">문의하기</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>   
         </section>
     </div>
-</body>
+    <footer class="footer">
+        <div class="wrap">
+            <div class="f_top">
+                <p>
+                    <span class="f_tit">사업자명</span>
+                    <span class="f_space">|</span>
+                    <span >(주)유클리드소프트</span>
+                    <span class="f_space">|</span>
+                    <span class="f_tit">대표</span>
+                    <span class="f_space">|</span>
+                    <span>채은경, 박주한</span>
+                    <span class="f_space">|</span>
+                    <span class="f_tit">사업자번호</span>
+                    <span class="f_space">|</span>
+                    <span>314-86-59383</span>
+                </p>
+                <p>
+                    <span class="f_tit">주소</span>
+                    <span class="f_space">|</span>
+                    <span>대전 동구 계족로 151 (대전지식산업센터) 6층</span>
+                    <span class="f_space">|</span> 
+                    <span class="f_tit">TEL</span>
+                    <span class="f_space">|</span>
+                    <span>042-335-6589</span>
+                    <span class="f_space">|</span>
+                    <span class="f_tit">E-mail</span>
+                    <span class="f_space">|</span>   
+                    <span>euclidsoft.edu@gmail.com</span>
+                </p>
+            </div>
+            <div class="f_btm">
+                <div class="copyright">ⓒ ABC BOOTCAMP. ALL RIGHTS RESERVED.</div>
+                <div class="social-media">
+                  <ul class="social-media-list">
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_blog.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_insta.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_talk.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_youtube.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_edu.svg" alt=""></a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <div class="floatbox">
+        <div class="floatbox_top">
+            <a href="">
+                <img src="./img/floatbox_top.svg">
+                <p class="text">신청하기</p>
+            </a>
+        </div>
+        <div class="floatbox_bot">
+            <a href="">
+                <img src="./img/floatbox_bot.svg">
+                <p class="text">문의하기</p>
+            </a>
+        </div>
+      </div>
+</body> 
 </html>

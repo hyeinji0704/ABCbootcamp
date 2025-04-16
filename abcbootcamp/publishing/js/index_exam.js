@@ -16,11 +16,17 @@
             const frag = document.createDocumentFragment();
             
             originalText.split("").forEach((char) => {
-                const span = document.createElement("span");
-                span.classList.add("char");
-                span.textContent = char;
-                frag.append(span);
-            });
+              const span = document.createElement("span");
+              span.classList.add("char");
+          
+              // 세미콜론이면 semicolon 클래스 추가
+              if (char === ";") {
+                  span.classList.add("semicolon");
+              }
+          
+              span.textContent = char;
+              frag.append(span);
+          });
             
             word.innerHTML = "";
             word.append(frag);
@@ -50,7 +56,7 @@
             currentIndex = (currentIndex + 1) > totalIndex ? 0 : currentIndex + 1;
 
             // 다음 전환 예약
-            this.timer = setTimeout(changeWord, 3000);
+            this.timer = setTimeout(changeWord, 3200);
         };
 
         // 초기 너비 설정 및 첫 번째 단어 활성화
@@ -61,7 +67,7 @@
             
             // 첫 전환 시작 (첫 단어가 이미 표시됐으므로 인덱스 변경)
             currentIndex = 0;
-            setTimeout(changeWord, 3000);
+            setTimeout(changeWord, 3200);
         });
     }
 };
@@ -116,3 +122,27 @@ $(document).ready(function(){
     });
 })
 
+/////////////////////////////////////////////////////////////
+// 헤더 스크롤 애니메이션
+/////////////////////////////////////////////////////////////
+
+window.addEventListener('scroll', function () {
+  let header = document.querySelector('header'); // 헤더 요소 선택
+  if (window.scrollY > 0) {
+      header.classList.add('active');
+  } else {
+      header.classList.remove('active');
+  }
+});
+
+/////////////////////////////////////////////////////////////
+// 헤더 스크롤 애니메이션
+/////////////////////////////////////////////////////////////
+
+window.addEventListener("DOMContentLoaded", () => {
+  const bgVideo = document.querySelector(".main_bg_video");
+  if (bgVideo) {
+    bgVideo.setAttribute("preload", "auto");
+    bgVideo.load();
+  }
+});

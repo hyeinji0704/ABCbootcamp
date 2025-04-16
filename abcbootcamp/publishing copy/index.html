@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
     <script src="./js/plugin/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/plugin/jquery/slick.min.js"></script>
+    <script src="./js/index_exam.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>ABC BOOTCAMP</title>
 </head>
 <body>
@@ -53,38 +58,462 @@
             </div>
         </div>
     </header>
-    <main class="main">
+    <div class="main">
         <section id="mv" class="main_visual">
             <div class="wrap">
                 <div class="inner">
                     <div class="slogan_title">
                         <div class="fix_title">
                             Explore
-                            <span><div class="visual-icon"></div></span>
+                            <span><img src="./img/visual_icon.svg"></span>
                         </div>
-                        <div class="change_words">
+                        <!-- <div class="change_words">
                             <div class="word_box">
-                                <span class="change_word on">
-                                    데이터 탐험가;
-                                </span>
-                                <span class="change_word">
-                                    ABC 프로젝트 멘토링;
-                                </span>
-                                <span class="change_word">
-                                    딥다이버;
-                                </span>
+                                <ol>
+                                    <li>
+                                        <span class="brace-left">&#123;</span>
+                                        데이터 탐험가
+                                        <span class="semicolon">;</span>
+                                        <span class="brace-right">&#125;</span></li>
+                                    <li>
+                                        <span class="brace-left">&#123;</span>
+                                        ABC 프로젝트 멘토링
+                                        <span class="semicolon">;</span>
+                                        <span class="brace-right">&#125;</span>
+                                    <li>
+                                        <span class="brace-left">&#123;</span>
+                                        딥다이버
+                                        <span class="semicolon">;</span>
+                                        <span class="brace-right">&#125;</span>
+                                    </li>
+                                </ol>
                             </div>
+                        </div> -->
+                        <div class="tiping_title">
+                            <span class="door d_l">&#123;</span>
+                            <p>
+                                <span class="typing"></span>
+                                <span class="typing_text"></span>
+                            </p>
+                            <span class="door d_r">&#125;</span>
                         </div>
                     </div>
                     <p>ABC 부트캠프는 IT기업에서 진행하는 전문적인 IT 교육 프로그램입니다.<br>
                         실질적인 경험과 프로그램으로 나만의 부스터를 만들어 보세요.</p>
-                    <a href="#">다양한 후기 영상 보러가기</a>
+                    <div class="main_btn_wrap">
+                        <a href="#" target="_blank" title="새창">
+                            <span class="main_btn_container">
+                                <span class="main_btn main_btn_ani"></span>
+                                <span>
+                                    <span class="main_btn_title">다양한 후기 영상 보러가기</span>
+                                </span>
+                            </span>
+                        </a><!-- 유튜브 사이트로 이동 -->
+                    </div>
                 </div> 
-                <video class="edu_video asset" muted playsinline preload="metadata" poster>
+                <video class="edu_video asset" autoplay muted playsinline loop preload="none"
+                poster="./img/abc_video_thumbnail.png">
                     <source src="./video/abc_video.mp4" type="video/mp4">
                 </video>
+                <div class="main_scroll_wrap">
+                    <div class="main_scroll">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
-</body>
+        <section class="section abc_education">
+            <div class="wrap">
+                <div class="section-title">
+                    ABC 부트캠프
+                    <br />
+                    교육과정을 소개합니다
+                  </div>
+                  <div class="abc_edu01">
+                      <div class="abc_edu_img"><img src="./img/edu_data.svg"></div>
+                      <div class="abc_edu_text"> 
+                          <h2>데이터 탐험가</h2>
+                          <p>파이썬 기초부터 인공지능 활용까지 배우고
+                              <br />
+                              ESG 특강으로 넓은 시야를 경험해보세요.
+                          <div class="info-container">
+                              <div class="info-item">
+                                  <div class="info-text">7주</div>
+                              </div>
+                              <div class="info-item">
+                                  <div class="info-text">전공무관</div>
+                              </div>
+                              <div class="info-item">
+                                  <div class="info-text">방학과정</div>
+                              </div>
+                          </div>
+                          <div class="main_btn_wrap edu_more">
+                            <a href="/data_explorer/">
+                                <span class="main_btn_container">
+                                    <span class="main_btn main_btn_ani"></span>
+                                    <span class="main_btn_text">
+                                        <span class="main_btn_title">자세히 보기</span>
+                                        <img src="./img/edu_arrow_right.svg" />
+                                    </span>
+                                </span>
+                            </a>
+                           </div>
+                      </div>
+                  </div>
+                  <div class="abc_edu02">
+                      <div class="abc_edu_text">
+                          <h2>ABC 프로젝트 멘토링</h2>
+                          <p>직무 전문가와 함께 실전 프로젝트를 진행해
+                            <br/>
+                            수준 높은 포트폴리오를 제작해보세요.
+                          <div class="info-container">
+                              <div class="info-item">
+                                  <div class="info-text">6주</div>
+                              </div>
+                              <div class="info-item">
+                                  <div class="info-text">다양한 직무</div>
+                              </div>
+                              <div class="info-item">
+                                  <div class="info-text">매월 진행</div>
+                              </div>
+                          </div>
+                          <div class="main_btn_wrap edu_more">
+                            <a href="/mentoring/">
+                                <span class="main_btn_container">
+                                    <span class="main_btn main_btn_ani"></span>
+                                    <span class="main_btn_text">
+                                        <span class="main_btn_title">자세히 보기</span>
+                                        <img src="./img/edu_arrow_right.svg" />
+                                    </span>
+                                </span>
+                            </a>
+                           </div>
+                      </div>
+                      <div class="abc_edu_img"><img src="./img/edu_mentoring.svg"></div>
+                  </div>
+            </div>
+        </section>
+        <section class="section abc_review">
+            <div class="wrap">
+                <div class="section-content">
+                    <div class="section-title">ABC 부트캠프를 통해<br />
+                      성장한 우리들의 이야기
+                    </div>
+                    <div class="main_btn_wrap edu_more edu_more02">
+                        <a href="/abc_story">
+                            <span class="main_btn_container">
+                                <span class="main_btn02 main_btn_ani "></span>
+                                <span class="main_btn_text">
+                                    <span class="main_btn_title">수료생 스토리 자세히 보기</span>
+                                    <img src="./img/edu_arrow_right.svg" />
+                                </span>
+                            </span>
+                        </a>
+                       </div>
+                    <div class="btn_wrap">
+                        <div class="btn">
+                            <button type="button" class="slick-prev"></button>
+                            <button type="button" class="slick-next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="popup_wrap list">
+                <div class="popup">
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“데이터 분석을 통해 고객의 니즈를 파악해볼 수 있었고, 이런 경험은 앞으로 정말 많은 도움이 될 것 같아요. 또 실무자 분들의 멘토링과 피드백 덕분에 실제 업무를 미리 경험해볼 수 있었어요.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile01.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">ABC 프로젝트 멘토링 수료생</span>
+                                    <span class="profile_name">광고ㆍ마케팅 과정 박*솜</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“여러 시각을 경험하고, 프로젝트를 통해 얻은 성취감이 앞으로 진로를 정하는 데 좋은 기반이 되어줄 거란 생각이 들어요.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile02.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">데이터 탐험가 과정 수료생</span>
+                                    <span class="profile_name">3기 이*정</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“이번 교육은 저한테 앞으로 하게 될 프로젝트를 위한 ‘준비’였고, 바로 실전으로 나아가기 위한 ‘발사’였어요. 그리고 다음엔 어디를 향해 나아가야 할지 생각하게 해준 ‘조준’이기도 했죠. 저한테 ABC 부트캠프는 정말 인생의 ‘예광탄’ 같은 경험이었어요.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile03.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">데이터 탐험가 과정 수료생</span>
+                                    <span class="profile_name">3기 송*우</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“실제 경험을 쌓고 프로젝트를 직접 완성해보는 과정이 진짜 스펙 쌓는 데 큰 도움이 될 것 같아요.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile04.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">ABC 프로젝트 멘토링 수료생</span>
+                                    <span class="profile_name">언론 과정 조*아</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“진짜 사원이 된 것처럼 프로젝트에 진지하게 임하면서, 실제로 일할 때 어떤 역량이 필요한지도 직접 느끼고 배울 수 있었어요.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile05.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">ABC 프로젝트 멘토링 수료생</span>
+                                    <span class="profile_name">IT 과정 김*엽</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“두려움을 조금만 이겨낼 용기만 있다면, 데이터 탐험가 과정에서 얻는 배움과 성장은 정말 뭐랑도 바꿀 수 없을 만큼 값진 경험이 될 거예요.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile06.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">데이터 탐험가 과정 수료생</span>
+                                    <span class="profile_name">3기 최*정</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“ABC 부트캠프는 저한테 단순히 기술만 배우는 시간이 아니었어요. 리더십도 키우고, 도전하는 법도 배울 수 있었던 정말 소중한 경험이었죠.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile07.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">데이터 탐험가 과정 수료생</span>
+                                    <span class="profile_name">3기 조*주</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup-slide">
+                        <a href="#">
+                            <strong class="subject">“프로젝트 활동비 지원 덕분에 부담 없이 프로젝트를 진행할 수 있었고, 전문가의 도움까지 받아서 제 관심 분야나 직무 경험을 더 넓힐 수 있었어요.”</strong>
+                            <div class="review_profile">
+                                <img src="./img/profile08.svg">
+                                <div class="profile_info">
+                                    <span class="profile_major">ABC 프로젝트 멘토링 수료생</span>
+                                    <span class="profile_name">IT 과정 이*준</span>
+                                </div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="section abc_advantages">
+            <div class="wrap">
+                <div class="section-content">
+                    <div class="section-title">
+                        <strong>누구나 환영, ABC부터 차근차근</strong>
+                        <p>기초부터 실전 역량 강화까지 ABC 부트캠프와 함께해요</p>
+                    </div>
+                </div>
+                <div class="section-list">
+                    <div class="list01 list">
+                        <div class="list_text">
+                            <span>2024 고용노동부 우수 프로그램 선정</span>
+                            <p>매년 우수 프로그램 달성!<br>
+                            <em>체계적인 커리큘럼 보유</em></p>
+                        </div>
+                        <div class="edu_more03">
+                            <a href="/about/">ABC 부트캠프 소개<img src="./img/edu_arrow_right.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="list02">
+                        <div class="list">
+                            <div class="list_text">
+                                <span>맞춤형 피드백으로 실력 향상</span>
+                                <p>탑티어 전문가의 <em>밀착 멘토링!</em></p>
+                            </div>
+                            <div class="list_img img01">
+                                <img src="./img/adventage02.svg">
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list_text">
+                                <span>취업·실무 준비까지 한 번에 해결</span>
+                                <p>최고 효율로 <em>스펙 완벽 업그레이드!</em></p>
+                            </div>
+                            <div class="list_img img02">
+                                <img src="./img/adventage03.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="section abc_news">
+            <div class="wrap">
+                <div class="section-content">
+                    <div class="section-title">ABC 스토리 뉴스</div>
+                    <div class="main_btn_wrap edu_more edu_more02">
+                        <a href="/abc_story">
+                            <span class="main_btn_container">
+                                <span class="main_btn02 main_btn_ani"></span>
+                                <span class="main_btn_text">
+                                    <span class="main_btn_title">ABC 뉴스 보러가기</span>
+                                    <img src="./img/edu_arrow_right.svg" />
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news_list">
+                    <div class="news_cnt news_list01">
+                        <a href="#">
+                            <div class="news_img"><img src="./img/news01.png"></div>
+                            <div class="hastags">
+                                <p>#프로젝트 멘토링</p>
+                                <p>#ABC교육</p>
+                            </div>
+                            <span class="news_title">[ABC 프로젝트 멘토링] 4월 (IT/광고·마케팅) 과정</span>
+                            <div class="edu_more03">
+                                <a href="#">자세히 보기<img src="./img/edu_arrow_right_blue.svg" /></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_cnt news_list02">
+                        <a href="#">
+                            <div class="news_img"><img src="./img/news02.png"></div>
+                            <div class="hastags">
+                                <p>#프로젝트 멘토링</p>
+                                <p>#ABC교육</p>
+                            </div>
+                            <span class="news_title">[ABC 프로젝트 멘토링] 4월 (IT/광고·마케팅) 과정</span>
+                            <div class="edu_more03">
+                                <a href="#">자세히 보기<img src="./img/edu_arrow_right_blue.svg" /></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news_cnt news_list03">
+                        <a href="#">
+                            <div class="news_img"><img src="./img/news03.png"></div>
+                            <div class="hastags">
+                                <p>#프로젝트 멘토링</p>
+                                <p>#ABC교육</p>
+                            </div>
+                            <span class="news_title">[ABC 프로젝트 멘토링] 4월 (IT/광고·마케팅) 과정</span>
+                            <div class="edu_more03">
+                                <a href="#">자세히 보기<img src="./img/edu_arrow_right_blue.svg" /></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="section abc_contact">
+            <div class="wrap">
+                <div class="section-content">
+                    <div class="section-title">
+                        <p>Contact us</p>
+                        <strong>ABC 부트캠프와 함께 나아가는 내일</strong>
+                    </div>
+                    <div class="main_btn_wrap edu_more edu_more02 edu_contact_btn">
+                        <a href="#" target="_blank" title="새창">
+                            <span class="main_btn_container">
+                                <span class="main_btn main_btn_ani"></span>
+                                <span>
+                                    <span class="main_btn_title">FAQ</span>
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="main_btn_container">
+                                <span class="main_btn02 main_btn_ani"></span>
+                                <span>
+                                    <span class="main_btn_title">문의하기</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="wrap">
+            <div class="f_top">
+                <p>
+                    <span class="f_tit">사업자명</span>
+                    <span class="f_space">|</span>
+                    <span >(주)유클리드소프트</span>
+                    <span class="f_space">|</span>
+                    <span class="f_tit">대표</span>
+                    <span class="f_space">|</span>
+                    <span>채은경, 박주한</span>
+                    <span class="f_space">|</span>
+                    <span class="f_tit">사업자번호</span>
+                    <span class="f_space">|</span>
+                    <span>314-86-59383</span>
+                </p>
+                <p>
+                    <span class="f_tit">주소</span>
+                    <span class="f_space">|</span>
+                    <span>대전 동구 계족로 151 (대전지식산업센터) 6층</span>
+                    <span class="f_space">|</span> 
+                    <span class="f_tit">TEL</span>
+                    <span class="f_space">|</span>
+                    <span>042-335-6589</span>
+                    <span class="f_space">|</span>
+                    <span class="f_tit">E-mail</span>
+                    <span class="f_space">|</span>   
+                    <span>euclidsoft.edu@gmail.com</span>
+                </p>
+            </div>
+            <div class="f_btm">
+                <div class="copyright">ⓒ ABC BOOTCAMP. ALL RIGHTS RESERVED.</div>
+                <div class="social-media">
+                  <ul class="social-media-list">
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_blog.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_insta.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_talk.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_youtube.svg" alt=""></a></li>
+                    <li class="social_item"><a href="#" target="_blank" title="새창"><img src="./img/f_edu.svg" alt=""></a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <div class="floatbox">
+        <div class="floatbox_top">
+            <a href="">
+                <img src="./img/floatbox_top.svg">
+                <p class="text">신청하기</p>
+            </a>
+        </div>
+        <div class="floatbox_bot">
+            <a href="">
+                <img src="./img/floatbox_bot.svg">
+                <p class="text">문의하기</p>
+            </a>
+        </div>
+      </div>
+      <script>
+        var typed = new Typed('.typing', {
+          strings: ['데이터 탐험가;', 'ABC 프로젝트 멘토링;', '딥다이버;'],
+          typeSpeed: 50,
+        });
+      </script>
+</body> 
 </html>
