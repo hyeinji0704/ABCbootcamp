@@ -739,27 +739,28 @@ header .sns > ul li {
 
 .tiping_title {
     position: relative;
-    margin-bottom: 5vh;
-    width: fit-content;
+    display: flex; /* flex 레이아웃 사용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+    transition: width 500ms ease-out;
 }
 .tiping_title .d_l {
     color: #B4B4B4;
     font-size: 94px;
     font-weight: 700;
-    float: left;
-    line-height: 0.9;
+    margin-bottom: 10px;
 }
+
 .tiping_title .d_r {
     color: #B4B4B4;
     font-size: 94px;
     font-weight: 700;
-    float: right;
-    line-height: 0.9;
+    margin-bottom: 10px;
 }
-.tiping_title p {
+.tiping_title > p {
     display: inline-block;
-    width: 80%;
-    padding: 0 24px;
+    padding: 0 0 0 20px; 
+    white-space: nowrap; 
 }
 .tiping_title .typing {
     color: #FFF;
@@ -779,15 +780,37 @@ header .sns > ul li {
     animation: blink 0.7s infinite;
 }
 .tiping_title::after {
-    display: block;
-    content: '';
-    clear: both;
+    display: none;
+}
+.typing_text {
+    position: absolute;
     visibility: hidden;
-    height: 0;
+    white-space: nowrap;
+    pointer-events: none;
+}
+/* 커서 깜박임 속도 조정 */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.typed-cursor {
+    opacity: 1;
+    font-size: 94px;
+    font-weight: 700;
+    color: #FFF;
+    -webkit-animation: blink 1.2s infinite; /* 깜박임 속도 감소 (0.7s → 1.2s) */
+    -moz-animation: blink 1.2s infinite;
+    animation: blink 1.2s infinite;
+}
+
+/* If fade out option is set */
+.typed-fade-out {
 }
 
 
-.main_visual p {
+.main_visual .main_sub_text {
     color: #FFF;
     font-size: 22px;
     font-weight: 400;
@@ -1080,7 +1103,17 @@ header .sns > ul li {
 
 .list .popup .popup-slide { 
     width:469px; 
-    margin:0 18px;
+    padding-top: 1rem;
+    margin: 0 18px;
+    transition: transform .3s ease-out;
+}
+.list .popup .popup-slide:hover {
+    transform: translateY(-1rem);
+}
+.abc_news .news_list .news_cnt  {
+    width: 33%;
+    padding: 0 1.4em 1.4em 0;
+    
 }
 .list .popup .popup-slide a {
     color: #FFF;
