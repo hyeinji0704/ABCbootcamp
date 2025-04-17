@@ -1,5 +1,6 @@
+// 메인 비주얼 텍스트 애니메이션
 document.addEventListener('DOMContentLoaded', function() {
-  const typingTitle = document.querySelector('.tiping_title');
+  const typingTitle = document.querySelector('.typing_title');
   const typingElement = document.querySelector('.typing');
   const typingP = typingTitle.querySelector('p');
   
@@ -8,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
   }
   
-  // 문자열 배열과 너비를 미리 계산하기 위한 맵
+  // 문자열 배열
   const strings = ['데이터 탐험가;', 'ABC 프로젝트 멘토링;', '딥다이버;'];
   const widthMap = {};
   
-  // 보이지 않는 요소에 텍스트를 렌더링하여 각 문자열의 최종 너비를 미리 계산
+  // 너비 측정을 위한 임시 요소
   const measureElement = document.createElement('span');
   measureElement.style.cssText = `
       position: absolute;
@@ -33,15 +34,49 @@ document.addEventListener('DOMContentLoaded', function() {
   
   document.body.removeChild(measureElement);
   
-  // 패딩과 내부 여백 설정
-  const pPadding = 80; // p 태그 양쪽 패딩 합계 (40px + 40px)
+  // 패딩 비율 설정 (오른쪽 패딩이 왼쪽의 1.2배)
+  const basePaddingLeft = 20;
+  const basePaddingRight = basePaddingLeft * 2.6; // 1.2배 크게 설정
   
-  // 너비 조절 함수 - p 태그의 너비만 조정
+  // 너비 및 패딩 조절 함수
   function adjustWidth(width, duration = 500) {
-      // p 태그의 너비만 변경
+      // 현재 폰트 크기를 기준으로 패딩 계산 (반응형 대응)
+      const currentFontSize = parseFloat(window.getComputedStyle(typingElement).fontSize);
+      const fontRatio = currentFontSize / 94; // 기준 폰트 사이즈(94px)에 대한 비율
+      
+      // 현재 폰트 크기에 맞게 패딩 조정
+      const paddingLeft = Math.round(basePaddingLeft * fontRatio);
+      const paddingRight = Math.round(basePaddingRight * fontRatio);
+      
+      // p 태그에 패딩 적용
+      typingP.style.paddingLeft = paddingLeft + 'px';
+      typingP.style.paddingRight = paddingRight + 'px';
+      
+      // 총 패딩 합계
+      const totalPadding = paddingLeft + paddingRight;
+      
+      // p 태그의 너비 조정 (애니메이션 적용)
       typingP.style.transition = `width ${duration}ms ease-out`;
-      typingP.style.width = (width + pPadding) + 'px';
+      typingP.style.width = (width + totalPadding) + 'px';
   }
+  
+  // 반응형 대응을 위한 리사이즈 이벤트 리스너
+  function handleResize() {
+      // 현재 활성화된 문자열 찾기
+      const activeIndex = typed.arrayPos || 0;
+      const currentString = strings[activeIndex];
+      
+      // 현재 폰트 크기에 따라 너비 재계산
+      const currentFontSize = parseFloat(window.getComputedStyle(typingElement).fontSize);
+      const fontRatio = currentFontSize / 94;
+      const adjustedWidth = Math.ceil(widthMap[currentString] * fontRatio);
+      
+      // 새 너비로 업데이트 (애니메이션 없이)
+      adjustWidth(adjustedWidth, 0);
+  }
+  
+  // 리사이즈 이벤트에 대응
+  window.addEventListener('resize', handleResize);
   
   // typed.js 초기화
   var typed = new Typed('.typing', {
@@ -54,10 +89,16 @@ document.addEventListener('DOMContentLoaded', function() {
       breakLines: false,
       loop: true,
       preStringTyped: function(arrayPos, self) {
-          // 타이핑 시작 전에 p 태그 너비 애니메이션 시작
+          // 현재 폰트 크기 기준으로 너비 계산
+          const currentFontSize = parseFloat(window.getComputedStyle(typingElement).fontSize);
+          const fontRatio = currentFontSize / 94;
+          
           const currentString = self.strings[arrayPos];
-          const targetWidth = widthMap[currentString];
-          adjustWidth(targetWidth, 500);
+          const baseWidth = widthMap[currentString];
+          const adjustedWidth = Math.ceil(baseWidth * fontRatio);
+          
+          // 애니메이션 적용
+          adjustWidth(adjustedWidth, 500);
       }
   });
   
@@ -65,7 +106,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const initialWidth = widthMap[strings[0]];
   adjustWidth(initialWidth, 0);
 });
-// DOM 로드 후 실행
+
+
+// 메인 리뷰 슬라이드
 document.addEventListener("DOMContentLoaded", () => {
   MainVisual.init();
 });
@@ -87,27 +130,27 @@ $(document).ready(function(){
       swipeToSlide: true, //드래그한만큼 슬라이드 움직이기
       centerMode: true, //가운데정렬(가운데가 1번)
       responsive: [
-          {
-            breakpoint: 1040, //1300px 이하
-            settings: {
-              slidesToShow: 2,
-              centerMode: false //가운데정렬 해제,
-            }
-          },
-          {
-            breakpoint: 375,
-            settings: { 
-              slidesToShow: 1,
-              centerMode: false //가운데정렬 해제,
-            }
-          },
-      ]
+        {
+          breakpoint: 1041, //1041px 이하
+          settings: {
+            slidesToShow: 2,
+            centerMode: false, //가운데정렬 해제
+            speed: 600 // 태블릿 속도 조정
+          }
+        },
+        {
+          breakpoint: 500, // 모바일
+          settings: { 
+            slidesToShow: 1,
+            centerMode: false, //가운데정렬 해제
+            speed: 700 // 모바일 속도 조정
+          }
+        },
+    ]
   });
 })
 
-/////////////////////////////////////////////////////////////
 // 헤더 스크롤 애니메이션
-/////////////////////////////////////////////////////////////
 
 window.addEventListener('scroll', function () {
 let header = document.querySelector('header'); // 헤더 요소 선택
@@ -118,9 +161,6 @@ if (window.scrollY > 0) {
 }
 });
 
-/////////////////////////////////////////////////////////////
-// 헤더 스크롤 애니메이션
-/////////////////////////////////////////////////////////////
 
 // 메뉴
 function allMenu() {
