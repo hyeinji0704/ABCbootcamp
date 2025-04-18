@@ -107,6 +107,21 @@ document.addEventListener('DOMContentLoaded', function() {
   adjustWidth(initialWidth, 0);
 });
 
+lottie.loadAnimation({
+  container: document.getElementById('lottie-data'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './lottie/edu_data.json' // 실제 경로로 바꿔주세요!
+});
+
+lottie.loadAnimation({
+  container: document.getElementById('lottie-mentoring'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: './lottie/edu_mentoring.json' // 실제 경로로 바꿔주세요!
+});
 
 // 메인 리뷰 슬라이드
 document.addEventListener("DOMContentLoaded", () => {
