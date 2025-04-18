@@ -286,7 +286,7 @@ header .menu .nav nav:after {
 
 header .menu .nav nav:hover:after {
     opacity: 1;
-    height: 400px;
+    height: 360px;
 }
 
 header .menu .nav nav > ul > li {
@@ -335,7 +335,7 @@ header .menu .nav nav > ul > li:hover > a:after {
 }
 
 header .menu .nav nav > ul ul {
-    /*position: absolute;*/
+    position: absolute;
     width: 100%;
     /*padding: 22px 0 0;*/
     text-align: center;
