@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>멘토링</title>
+    <script src="./js/plugin/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/plugin/jquery/slick.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="./js/index_exam.js"></script>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/content.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="./css/datepicker.css" type="text/css">
+    <link rel="stylesheet" href="./css/index_exam.css" type="text/css">
+    <link rel="stylesheet" href="./css/about.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/mentoring.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="menu">
+                <h1>
+                    <a href="/">
+                        <div class="header_logo"></div>
+                    </a>
+                </h1>
+                <a href="#" class="all" onclick="allMenu()"></a>
+                <div class="nav">
+                    <h2>
+                        <a href="/">ABC BOOTCAMP</a>
+                    </h2>
+                    <nav>
+                        <ul>
+                            <li><a href="/about/">About</a></li>
+                            <li>
+                                <a href="/data_explorer/">교육소개</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/data_explorer/">데이터 탐험가</a></li>
+                                    <li><a href="/mentoring/">ABC 프로젝트 멘토링</a></li>
+                                    <li><a href="/deep_diver/">딥 다이버</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/abc_story">교육후기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_story">News & 후기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/faq/">FAQ</a></li>
+                            <li>
+                                <a href="/abc_education/">신청하기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_education/">교육신청</a></li>
+                                    <li><a href="/abcbootcamp/confirm_training/">신청확인</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="close" onclick="allMenuClose()">close</a>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <main>
+            <!--container-->
+            <div id="container" class="container">
+                <section class="mento_content">
+                    <div class="mento_content_wrap mento_enter_wrap">
+                        <h4 class="mento_content_title">
+                            ABC 프로젝트 멘토링은 직무 경험으로 취업 경쟁력을 키우는 프로그램
+                        </h4>
+                        <p class="mento_content_comment">
+                            전문가 멘토링과 팀 지원금을 활용하여 내게 맞는 직무인지를 탐색하고 경험하는 기회를 제공합니다.
+                        </p>
+                        <div class="mento_ex_sec_icons">
+                            <img src="img/mentoring_icon_1.svg" alt="대한상공회의소 로고" class="ex_icons_logo ex_logo_1">
+                            <img src="img/mentoring_close.svg" alt="" class="ex_icons_close">
+                            <img src="img/mentoring_icon_2.svg" alt="공용노동부 로고" class="ex_icons_logo ex_logo_3">
+                            <img src="img/mentoring_close.svg" alt="" class="ex_icons_close">
+                            <img src="img/mentoring_icon_3.svg" alt="유클리드소프트 로고" class="ex_icons_logo ex_logo_3">
+                            <img src="img/mentoring_close.svg" alt="" class="ex_icons_close">
+                            <img src="img/mentoring_icon_4.svg" alt="ABC부트캠프 로고" class="ex_icons_logo ex_logo_2">
+                        </div>
+                        <div class="mento_content_category_box">
+                            <div class="category">
+                                <img src="img/category_it.svg" alt="IT" class="mt_category_icon">
+                                <p>IT</p>
+                            </div>
+                            <div class="category">
+                                <img src="img/category_marketing.svg" alt="광고, 마케팅" class="mt_category_icon">
+                                <p>광고 · 마케팅</p>
+                            </div>
+                            <div class="category">
+                                <img src="img/category_r&d.svg" alt="연구, R&D" class="mt_category_icon">
+                                <p>연구 · R&D</p>
+                            </div>
+                            <div class="category">
+                                <img src="img/category_broadcast.svg" alt="언론" class="mt_category_icon">
+                                <p>언론</p>
+                            </div>
+                            <div class="category">
+                                <img src="img/category_media.svg" alt="디자인, 미디어" class="mt_category_icon">
+                                <p>디자인 · 미디어</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mento_content">
+                    <div class="mento_content_wrap">
+                        <div class="mento_camp_title_box">
+                            <img src="img/mentoring_camp_icon.svg" alt="캠프모양 아이콘">
+                            <h4 class="mento_camp_title">ABC 프로젝트 멘토링에 참여해야 하는 이유</h4>
+                        </div>
+                        <div class="mento_reason_process_box">
+                            <div class="mento_reason_process">
+                                <div class="reason_title" style="background: #3D3D3D;">
+                                    <span class="dot"></span>
+                                    <span>실무 경험 UP</span>
+                                </div>
+                                <div class="reason_desc">
+                                    <span>기업 실무 프로젝트 수행 →<br>스펙과 직무 역량 동시 강화</span>
+                                </div>
+                            </div>
+                            <div class="mento_reason_process">
+                                <div class="reason_title" style="background: rgba(58, 106, 234, 0.90);">
+                                    <span class="dot"></span>
+                                    <span>자유도 UP 부담감 DOWN</span>
+                                </div>
+                                <div class="reason_desc">
+                                    <span>시간과 장소의 구애 없이<br>자유롭게 프로젝트 수행</span>
+                                </div>
+                            </div>
+                            <div class="mento_reason_process">
+                                <div class="reason_title" style="background: rgba(244, 188, 45, 0.89);">
+                                    <span class="dot"></span>
+                                    <span>포트폴리오 GET</span>
+                                </div>
+                                <div class="reason_desc">
+                                    <span>전문가 멘토와 함꼐 프로젝트를 수행하여<br>퀄리티 높은 포트폴리오 획득</span>
+                                </div>
+                            </div>
+                            <div class="mento_reason_process">
+                                <div class="reason_title" style="background: rgba(63, 174, 255, 0.85);">
+                                    <span class="dot"></span>
+                                    <span>든든한 지원금 제공</span>
+                                </div>
+                                <div class="reason_desc">
+                                    <span>개인 지원금 최대 45만 원과 +<br>팀 지원금(6주 기준) 180만 원을 제공</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mento_content">
+                    <div class="mento_content_wrap">
+                        <div class="mento_camp_title_box">
+                            <img src="img/mentoring_camp_icon.svg" alt="캠프모양 아이콘">
+                            <h4 class="mento_camp_title">교육과 실전 프로젝트를 통해 체계적으로 일경험 쌓기</h4>
+                        </div>
+                        <div class="mento_earn_box">
+                            <div class="mento_earn">
+                                <span class="mento_traklist"></span>
+                                <div class="mento_tracktext">
+                                    <p>사전직무교육 + 일경험 프로젝트</p>
+                                </div>
+                            </div>
+                            <div class="mento_earn">
+                                <span class="mento_traklist"></span>
+                                <div class="mento_tracktext">
+                                    <p>사전직무교육(15시간)</p>
+                                    <span>프로젝트 실시 전, 직무 역량을 함양하는 직무 특화 교육 수강</span>
+                                </div>
+                            </div>
+                            <div class="mento_earn">
+                                <span class="mento_traklist"></span>
+                                <div class="mento_tracktext">
+                                    <p>일경험 프로젝트(6주)</p>
+                                    <span>참여기업이 제안한 주제를 바탕으로 전문가 멘토 및 팀원과 프로젝트 수행</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mento_result_box bg_0E2137">
+                    <div class="mento_content_wrap mento_result_bg">
+                        <div class="mento_result mento_result_wings">
+                            <h4>2024년 성과</h4>
+                            <p>고용노동부 우수기관 선정</p>
+                        </div>
+                        <div class="mento_result mento_result_text">
+                            <p>전체 수료율</p>
+                            <div class="percentage">
+                                <h4>90.0</h4>
+                                <p>%</p>
+                            </div>
+                        </div>
+                        <div class="mento_result mento_result_text">
+                            <p>충청권 거주 청년</p>
+                            <div class="percentage">
+                                <h4>98.0</h4>
+                                <p>%</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="mento_question_box bg_464AD1">
+                    <div class="mento_content_wrap mento_question">
+                        <div class="mento_question_title">
+                            <h4>지금 바로 ABC 프로젝트 멘토링에 참여해 보세요!</h4>
+                            <p>실무 경험과 포트폴리오를 한 번에! 지금 시작하세요.</p>
+                        </div>
+                        <div class="question_box">
+                            <div class="question_wrap">
+                                <div class="question">
+                                    <p>알바/학업/취준과 병행할 수 있는 대외활동을 찾으시나요?</p>
+                                </div>
+                                <div class="question_icon"><img src="img/question_icon_bulb.svg" alt="전구 아이콘"></div>
+                                <div class="question">
+                                    <p>다양한 사람들과 협업하며 실무 경험을 쌓고 싶나요?</p>
+                                </div>
+                                <div class="question">
+                                    <p>지원금을 받으면서 프로젝트에 몰입하고 싶으신가요?</p>
+                                </div>
+                            </div>
+                            <div class="question_wrap">
+                                <div class="question_icon"><img src="img/question_icon_code.svg" alt="코드 아이콘"></div>
+                                <div class="question">
+                                    <p>전문가 멘토링을 통해서 퀄리티 있는 포트폴리오를 얻고 싶으신가요?</p>
+                                </div>
+                                <div class="question_icon"><img src="img/question_icon_coder.svg" alt="코더 아이콘"></div>
+                                <div class="question">
+                                    <p>관심 직무가 정말 내게 맞는지 경험해보고 싶으신가요?</p>
+                                </div>
+                                <div class="question_icon"><img src="img/question_icon_list.svg" alt="리스트 아이콘"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mento_content">
+                    <div class="mento_content_wrap">
+                        <div class="mento_camp_title_box">
+                            <img src="img/mentoring_camp_icon.svg" alt="캠프모양 아이콘">
+                            <h4 class="mento_camp_title">직무별 프로젝트 주제 예시</h4>
+                        </div>
+                    </div>
+        
+                    <div class="mento_topic_board">
+                        <ul class="mento_topic_list">
+                            <li>
+                                <div class="topic_img"><img src="img/topic_it.svg" alt=""></div>
+                                <div class="topic_text">
+                                    <h4 class="topic_title">IT(Information Technology)</h4>
+                                    <div class="topic_desc">
+                                        <p>사용자 기반의 플랫폼 UI/UX 개선</p>
+                                        <p>생성형 AI 및 데이터를 활용한 서비스 기획</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic_img"><img src="img/topic_marketing.svg" alt=""></div>
+                                <div class="topic_text">
+                                    <h4 class="topic_title">광고 · 마케팅</h4>
+                                    <div class="topic_desc">
+                                        <p>제품 온라인 홍보 콘텐츠(쇼츠, 이미지)제작</p>
+                                        <p>브랜드 인지도 제고를 위한 SNS 마케팅 기획</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic_img"><img src="img/topic_broadcast.svg" alt=""></div>
+                                <div class="topic_text">
+                                    <h4 class="topic_title">언론</h4>
+                                    <div class="topic_desc">
+                                        <p>지역사회 현안을 기반으로 한 보도 영상 제작</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic_img"><img src="img/topic_r&d.svg" alt=""></div>
+                                <div class="topic_text">
+                                    <h4 class="topic_title">연구 · R&D</h4>
+                                    <div class="topic_desc">
+                                        <p>논문 키워드 분석을 통한 연구 주제 탐색 및 시각화</p>
+                                        <p>누수 모니터링 서비스 연구</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="topic_img"><img src="img/topic_media.svg" alt=""></div>
+                                <div class="topic_text">
+                                    <h4 class="topic_title">디자인 · 미디어</h4>
+                                    <div class="topic_desc">
+                                        <p>브랜드 캐릭터, 굿즈 디자인 기획</p>
+                                        <p>- 기업 홍보 영상 제작</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mento_content">
+                    <div class="mento_content_wrap">
+                        <div class="mento_camp_title_box">
+                            <img src="img/mentoring_camp_icon.svg" alt="캠프모양 아이콘">
+                            <h4 class="mento_camp_title">모집안내</h4>
+                        </div>
+                        <div class="mento_info">
+                            <div class="mento_info_box">
+                                <div class="info_title"><p>선발인원</p></div>
+                                <div class="info_div_list">
+                                    <p>총 200명 (기수별 선발 인원 상이)</p>
+                                </div>
+                            </div>
+                            <div class="mento_info_box">
+                                <div class="info_title"><p>지원자격</p></div>
+                                <div class="info_div_list">
+                                    <p>만 18세 이상 34세 미만의 미취업 청년 (전공불문)</p>
+                                </div>
+                            </div>
+                            <div class="mento_info_box">
+                                <div class="info_title"><p>모집직무</p></div>
+                                <div class="info_div_list">
+                                    <p>IT, 광고 · 마케팅, 연구 · R&D, 언론, 디자인 · 미디어 (총 5개 분야)</p>
+                                </div>
+                            </div>
+                            <div class="mento_info_box">
+                                <div class="info_title"><p>참여제한</p></div>
+                                <ul class="info_flot_list">
+                                    <li>4대 보험 가입자 및 재직자 (단, 주 30시간 미만 근무자는 지원가능)</li>
+                                    <li>사업자등록증을 보유한 사업자</li>
+                                    <li>같은 연도에 미래내일 일경험 사업에 2회 이상 참여한 자</li>
+                                    <li>국가 및 지자체에서 실시하는 프로그램에 동시에 참여하는 자</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mento_content">
+                    <div class="mento_content_wrap">
+                        <div class="mento_camp_title_box">
+                            <img src="img/mentoring_camp_icon.svg" alt="캠프모양 아이콘">
+                            <h4 class="mento_camp_title">모집절차</h4>
+                        </div>
+                        <div class="mento_procedure">
+                            <div class="mento_procedure_box">
+                                <div class="mento_procedure_step">
+                                    <p>STEP</p>
+                                    <div class="mento_procedure_circlebox">
+                                        01
+                                    </div>
+                                </div>
+                                <div class="mento_procedure_title">
+                                    <h4>서류접수</h4>
+                                </div>
+                            </div>
+                            <div class="mento_procedure_box">
+                                <div class="mento_procedure_step">
+                                    <p>STEP</p>
+                                    <div class="mento_procedure_circlebox">
+                                        02
+                                    </div>
+                                </div>
+                                <div class="mento_procedure_title">
+                                    <h4>면접전형</h4>
+                                </div>
+                            </div>
+                            <div class="mento_procedure_box">
+                                <div class="mento_procedure_step">
+                                    <p>STEP</p>
+                                    <div class="mento_procedure_circlebox">
+                                        03
+                                    </div>
+                                </div>
+                                <div class="mento_procedure_title">
+                                    <h4>최종선발</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mento_procedure_desc">
+                            <p>*매월 모집 예정 (정확한 일정은 SNS를 통해 확인 혹은 모집 글 내 상세 내용을 확인해주세요.)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mento_content">
+                    <div class="mento_content_wrap">
+                        <div class="mento_camp_title_box">
+                            <img src="img/mentoring_camp_icon.svg" alt="캠프모양 아이콘">
+                            <h4 class="mento_camp_title">참여혜택</h4>
+                        </div>
+                        
+                        <div class="mento_benefit">
+                            <div class="mento_benefits_box">
+                                <img src="img/benefit_card_1.svg" alt="참여혜택 카드1">
+                                <div class="mento_benefits_text_box">
+                                    <div class="mento_benefits_text">
+                                        <span>1</span>
+                                        <p>개인 지원금 최대 47만원 지급</p>
+                                    </div>
+                                    <div class="mento_benefits_text">
+                                        <span>2</span>
+                                        <p>참가자 전원 교육비 전액지원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mento_benefits_box">
+                                <img src="img/benefit_card_2.svg" alt="참여혜택 카드2">
+                                <div class="mento_benefits_text_box">
+                                    <div class="mento_benefits_text">
+                                        <span>3</span>
+                                        <p>우수 수료생 및 프로젝트 포상 제공</p>
+                                    </div>
+                                    <div class="mento_benefits_text">
+                                        <span>4</span>
+                                        <p>참가자 전원 교육비 전액지원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mento_benefits_box">
+                                <img src="img/benefit_card_3.svg" alt="참여혜택 카드3">
+                                <div class="mento_benefits_text_box">
+                                    <div class="mento_benefits_text">
+                                        <span>5</span>
+                                        <p>교육과정 이수자 수료증 발급</p>
+                                    </div>
+                                    <div class="mento_benefits_text">
+                                        <span>6</span>
+                                        <p>사후(추가) 교육지원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mento_content">
+                    <div class="mento_content_wrap">
+                        <div class="mento_camp_title_box">
+                            <img src="img/mentoring_camp_icon.svg" alt="캠프모양 아이콘">
+                            <h4 class="mento_camp_title">수상내역</h4>
+                        </div>
+                    </div>
+        
+                    <div class="mento_award">
+                        <div class="mento_award_card">
+                            <img src="img/mento_award_icon.svg" alt="">
+                            <div class="mento_award_title">
+                                <span>2024 미래내일 일경험 지원사업 프로젝트형 우수 기관</span>
+                                <p>고용노동부 선정</p>
+                            </div>
+                        </div>
+                        <div class="mento_award_card">
+                            <img src="img/mento_award_icon.svg" alt="">
+                            <div class="mento_award_title">
+                                <span>2024 미래내일일경험 지원사업 우수사례 프로젝트 공모전</span>
+                                <p>장려상(대한상공회의소 이사장상)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+        
+                <div class="sns">
+                    <ul class="sns_list">
+                        <li class="sns_item n3">
+                            <a href="https://www.instagram.com/abcbootcamp.kr/" target="_blank" title="새창">
+                                <img src="img/mento_homePageImg/f_insta.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="sns_item n2">
+                            <a href="https://blog.naver.com/abc_bootcamp" target="_blank" title="새창">
+                                <img src="img/mento_homePageImg/f_blog.svg" alt="">
+                            </a>
+                        </li>
+        
+                        <li class="sns_item n4">
+                            <a href="https://band.us/@euclidlab" target="_blank" title="새창">
+                                <img src="img/mento_homePageImg/f_band.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="sns_item n5">
+                            <a href="http://pf.kakao.com/_pDpyb/chat" target="_blank" title="새창">
+                                <img src="img/mento_homePageImg/f_talk.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="sns_item n6">
+                            <a href="https://limeedu.kr/" target="_blank" title="새창" class="sns_anchor">
+                                <img src="img/mento_homePageImg/f_edu.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    TEL. 042-335-6589 | E-mail. euclidsoft.edu@gmail.com<br>
+                    주소 : 대전 동구 계족로 151 (대전지식산업센터) 6층<br>
+                    ⓒ ABC BOOTCAMP. ALL RIGHTS RESERVED.
+                </p>
+            </div>
+        
+        </footer>
+    </div>

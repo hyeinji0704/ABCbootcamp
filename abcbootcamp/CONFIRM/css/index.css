@@ -122,10 +122,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Pretendard-700', 'Montserrat', 'Pretendard', 'NanumSquare' , 'Noto Sans KR', sans-serif;
 }
 
-body {
-    background-color: #060606;
-}
-
 .wrap {
     max-width: 1440px;
     width: 100%;
@@ -945,6 +941,7 @@ header .nav li a {
 
 .main {
     min-height: 100vh;
+    background-color: #060606;
 }
 
 /* Visual : S */
