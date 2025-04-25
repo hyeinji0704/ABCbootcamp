@@ -1,0 +1,1041 @@
+@charset "UTF-8";
+
+.bg_0E2137 {
+    background-color: #0E2137;
+}
+
+.bg_464AD1 {
+    background-color: #464AD1;
+}
+
+.mento_content {
+    width: 100%;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mento_content:first-child {
+    padding: 120px 20px;
+}
+
+.mento_content_wrap {
+    display: flex;
+    width: 100%;
+    max-width: 1441px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mento_content_wrap.recom_wrap {
+    gap: 0;
+}
+
+.mento_content_wrap.mento_enter_wrap {
+    gap: 0;
+}
+
+.mento_content_wrap.mento_process_wrap {
+    gap: 60px;
+}
+
+.mento_content_title {
+    color: #222222;
+    font-size: 2rem;
+    font-family: 'Pretendard-600';
+    line-height: 150%;
+    text-align: center;
+}
+
+.mento_content_title span {
+    color: #4517CE;
+}
+
+.mento_content_box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    gap: 12px;
+}
+.mento_content_title {
+    color: #222;
+    font-size: 2rem;
+    font-family: "Pretendard-600";
+    line-height: 150%;
+    text-align: center;
+}
+
+
+.mento_content_comment {
+    color: #666666;
+    font-size: 1.25rem;
+    font-family: 'Pretendard-400';
+    line-height: 160%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 72px;
+}
+
+.mento_ex_sec_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+.mento_content_category_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 100px;
+}
+
+.mento_content_category_box .category {
+    max-width: 269px;
+    width: 100%;
+    max-height: 256px;
+    border-radius: 2px;
+    border: 1px solid #E6E7EB;
+    background: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    padding: 43px;
+}
+
+.mento_content_category_box .category p {
+    color: #222;
+    font-family: 'Pretendard-500';
+    font-size: 1rem;
+}
+
+.mento_camp_title_box {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center
+    ;
+    gap: 12px;
+    padding-bottom: 50px;
+}
+
+.mento_camp_title_box img {
+    margin-top: 3px;
+}
+
+.mento_camp_title {
+    color: #222222;
+    font-size: 1.875rem;
+    font-family: 'Pretendard-700';
+}
+
+.mento_traklist {
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    background-color: #D2D9DF;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+/* 멘토링 참여 이유(mento_reason_process) */
+
+.mento_reason_process_box {
+    display: flex;
+    width: 100%;
+}
+
+.mento_reason_process {
+    width: 100%;
+}
+
+.mento_reason_process:not(:first-child) {
+    margin-left: -40px;
+}
+
+.mento_reason_process .reason_title {
+    width: 100%;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mento_reason_process .reason_title .dot {
+    display: inline-flex;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 35.5px;
+    left: 10px;
+}
+
+.mento_reason_process .reason_title::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 1px;
+    width: 59px;
+    top: 39.5px;
+    left: 10px;
+}
+
+.mento_reason_process .reason_title span {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Pretendard-500';
+    font-size: 1.375rem;
+    letter-spacing: -0.44px;
+}
+
+.mento_reason_process .reason_desc {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mento_reason_process .reason_desc span {
+    color: #666;
+    font-family: 'Pretendard-500';
+    font-size: 1rem;
+    line-height: 27px;
+}
+
+/* 멘토링 일경험 (mento_earn) */
+
+.mento_earn_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mento_earn {
+    display: flex;
+    gap: 12px;
+}
+
+.mento_earn_box .mento_tracktext {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mento_earn_box .mento_tracktext p {
+    color: #222;
+    font-family: 'Pretendard-600';
+    font-size: 1.25rem;
+}
+
+.mento_earn_box .mento_tracktext span {
+    color: #666;
+    font-family: 'Pretendard-400';
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+/* 멘토링 성과 (mento_result) */
+
+.mento_result_box {
+    margin-top: 93px;
+    width: 100%;
+}
+
+.mento_result_bg {
+    background: url(../img/result_object.svg) no-repeat;
+    height: 329px;
+    position: relative;
+    display: flex;
+    gap: 180px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-position: right bottom;
+}
+
+.mento_result {
+    position: relative;
+}
+
+.mento_result:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    width: 21px;
+    height: 21px;
+    background-color: #233B57;
+    border-radius: 50%;
+    top: 34px;
+    left: -90px;
+}
+
+.mento_result_wings {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    margin: 0 145px 0 62px;
+}
+
+.mento_result_wings::before {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    width: 51px;
+    height: 136px;
+    background: url(../img/result_wing.svg) no-repeat;
+    left: -62px;
+}
+
+.mento_result_wings::after {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    width: 51px;
+    height: 136px;
+    background: url(../img/result_wing.svg) no-repeat;
+    right: -62px;
+    transform: scaleX(-1);
+}
+
+.mento_result_wings h4 {
+    color: #D59E5D;
+    font-family: 'Pretendard-400';
+    font-size: 2.063rem;
+    letter-spacing: -0.99px;
+}
+
+.mento_result_wings p {
+    color: #fff;
+    font-family: 'Pretendard-600';
+    font-size: 2.063rem;
+    letter-spacing: -0.99px;
+}
+
+.mento_result_text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 63px;
+}
+
+.mento_result_text > p {
+    font-family: 'Pretendard-500';
+    font-size: 1.188rem;
+    letter-spacing: -0.38px;
+}
+
+.mento_result_text .percentage {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.mento_result_text .percentage h4 {
+    font-family: 'Pretendard-700';
+    font-size: 3.125rem;
+    letter-spacing: -2px;
+}
+
+.mento_result_text .percentage p {
+    font-family: 'Pretendard-700';
+    font-size: 1.875rem;
+}
+
+
+/* 멘토링 질문 (mento_question) */
+
+.mento_question_box {
+    margin-bottom: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mento_question {
+    padding: 120px 0;
+    display: flex;
+    gap: 96px;
+}
+
+.mento_question_title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mento_question_title h4 {
+    color: #fff;
+    font-family: 'Pretendard-600';
+    font-size: 2.25rem;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+
+.mento_question_title p {
+    color: #AFB1F3;
+    font-family: 'Pretendard-400';
+    font-size: 1.25rem;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+.mento_question .question_box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.mento_question .question_box .question_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.mento_question .question_box .question { 
+    border-radius: 33px;
+    background: #fff;
+    padding: 8px 30px;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mento_question .question_box .question_wrap:first-child .question:first-child ,
+.mento_question .question_box .question_wrap:first-child .question:last-child { 
+    position: relative;
+}
+
+.mento_question .question_box .question_wrap:first-child .question:first-child::before {
+    content: "";
+    background: url(../img/question_icon_comment.svg) no-repeat;
+    width: 64px;
+    height: 72px;
+    display: inline-flex;
+    position: absolute;
+    top: -102px;
+    left: 114px;
+}
+
+.mento_question .question_box .question_wrap:first-child .question:last-child::before {
+    content: "";
+    background: url(../img/question_icon_explorer.svg) no-repeat;
+    width: 229px;
+    height: 227px;
+    display: inline-flex;
+    position: absolute;
+    top: -152px;
+    right: 24px;
+}
+
+.mento_question .question_box .question p { 
+    color: #222;
+    font-family: 'Pretendard-500';
+    font-size: 1.125rem;
+    letter-spacing: -0.36px;
+}
+
+/* 멘토링 주제 (mento_topic) */
+
+.mento_topic_board{
+    width: 100%;
+}
+
+.mento_topic_list {
+    width: 100%;
+    max-width: 1441px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 42px;
+    list-style: none;
+}
+
+.mento_topic_list li {
+    max-width: 452px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #E6E6E6;
+    background: #fff;
+    box-shadow: 0px 2px 10px 0px #EEEAF9;
+}
+
+.topic_img {
+    display: block;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 285px;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+.topic_text {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.topic_text .topic_title {
+    color: #222;
+    font-family: 'Pretendard-600';
+    font-size: 1.375rem;
+}
+
+.topic_text .topic_desc p {
+    color: #666;
+    font-family: 'Pretendard-400';
+    font-size: 1.125rem;
+    line-height: 31px;
+    display: flex;
+    align-items: start;
+    gap: 12px;
+}
+
+.topic_text .topic_desc p::before {
+    content: "";
+    display: inline-flex;
+    width: 4px;
+    height: 4px;
+    background-color: #666;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+
+/* 멘토링 모집안내 (mento_info) */
+
+.mento_info { 
+    width: 100%;
+    max-width: 1441px;
+    margin: 0 auto;
+    border-top: 4px solid #222;
+    border-bottom: 1px solid #aaa;
+}
+
+.mento_info ul {
+    list-style: none;
+}
+
+.mento_info_box { 
+    box-sizing: border-box;
+    padding: 32px 28px;
+    display: flex;
+    gap: 170px;
+}
+
+.mento_info_box:not(:last-child) { 
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.mento_info_box .info_title {
+    font-size: 1.25rem;
+    color: #222222;
+    line-height: 26px;
+    font-family: 'Pretendard-600';
+}
+
+.mento_info_box .info_div_list p {
+    color: #444444;
+    font-size: 1.25rem;
+    line-height: 130%;
+    font-family: 'Pretendard-500';
+}
+
+.mento_info_box .info_flot_list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.mento_info_box .info_flot_list li  {
+    color: #444444;
+    font-size: 1.25rem;
+    line-height: 130%;
+    font-family: 'Pretendard-500';
+    display: flex;
+    align-items: start;
+    gap: 12px;
+}
+
+.mento_info_box .info_flot_list li::before  {
+    content: "";
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    background-color: #D2D9DF;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+/* 멘토링 모집절차 (mento_procedure) */
+
+.mento_procedure {
+    width: 100%;
+    max-width: 1441px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+
+
+}
+
+.mento_procedure_box {
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+    padding: 40px 30px 63px;
+    display: flex;
+    gap: 24px;
+}
+
+.mento_procedure_step {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2px;
+}
+
+.mento_procedure_step p {
+    color: #3C434E;
+    font-size: 1.125rem;
+    font-family: 'Pretendard-500';
+}
+
+.mento_procedure_circlebox {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: #3C434E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: 'Pretendard-700';
+    position: relative;
+}
+
+.mento_procedure_box:nth-child(3) {
+    overflow-x: hidden;
+}
+
+.mento_procedure_circlebox:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    min-width: 500px;
+    background-color: #3C434E;
+    left: 50px;
+}
+
+.mento_procedure_title h4 {
+    font-size: 1.625rem;
+    font-family: 'Pretendard-600';
+    line-height: normal;
+}
+
+.mento_procedure_desc {
+    padding-top: 20px;
+    width: 100%;
+}
+
+.mento_procedure_desc p {
+    color: #666;
+    font-family: 'Pretendard-400';
+    font-size: 1rem;
+}
+
+/* 멘토링 참여혜택 (mento_benefit) */
+
+.mento_benefit {
+    width: 100%;
+    max-width: 1441px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 42px;
+}
+
+.mento_benefit .mento_benefits_box {
+    grid-row: span 2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #AAAAAA;
+    background-color: #FDFDFD;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mento_benefit .mento_benefits_text_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mento_benefit .mento_benefits_text {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.mento_benefit .mento_benefits_text span {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    background-color: #3C434E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9375rem;
+    font-family: 'Pretendard-700';
+}
+
+.mento_benefit .mento_benefits_text p {
+    font-size: 1.125rem;
+    font-family: 'Pretendard-600';
+    color: #3C3C3C;
+
+}
+
+/* 멘토링 수상내역 (mento_award) */
+
+.mento_award {
+    width: 100%;
+    max-width: 1441px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열로 고정 */
+    grid-template-rows: repeat(3, auto); /* 3개의 행으로 설정 */
+    gap: 12px;
+}
+
+.mento_award_card {
+    border: 1px solid #EAEAEA;
+    background-color: #FDFDFD;
+    box-sizing: border-box;
+    padding: 25px 30px 25px 40px;
+    display: flex;
+    gap: 16px;
+    align-items: start;
+}
+
+.mento_award_card .mento_award_title span {
+    color: #666666;
+    font-size: 1rem;
+    letter-spacing: -0.32px;
+}
+
+.mento_award_card .mento_award_title p {
+    padding-top: 6px;
+    font-size: 1.125rem;
+    color: #222222;
+    letter-spacing: -0.36px;
+    font-family: 'Pretendard-700';
+}
+
+.mento_award_card > img {
+    width: 24px;
+}
+
+
+@media (max-width: 1440px) {
+    .mento_reason_process .reason_title::before {
+        width: 42px;
+    }
+    
+    .mento_content_category_box {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1280px) {
+    .mento_reason_process .reason_title span {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mento_reason_process_box {
+        flex-wrap: wrap;
+        max-width: 870px;
+        row-gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mento_reason_process {
+        width: unset;
+    }
+
+    .mento_reason_process:nth-child(2n+1) {
+        margin-left: unset;
+    }
+
+    .mento_reason_process .reason_title {
+        min-width: 320px;
+    }
+
+    .mento_result_bg {
+        gap: unset;
+        justify-content: space-around;
+    }
+
+    .mento_result:not(:first-child)::before {
+        content: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mento_result_bg {
+        height: unset;
+        flex-direction: column;
+        gap: 20px;
+        padding: 36px 20px;
+    }
+
+    .mento_result_wings {
+        margin: unset;
+    }
+
+    .mento_result_text {
+        margin-bottom: unset;
+    }
+
+    .mento_question .question_box .question_wrap:first-child .question:first-child::before {
+        background-size: contain;
+        width: 50px;
+        top: -72px;
+        left: 60px;
+    }
+
+    .mento_question .question_box .question_wrap:first-child .question:last-child::before {
+        background-size: contain;
+        width: 180px;
+        top: -120px;
+        right: 0px;
+    }
+
+    .mento_procedure_circlebox:after {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 890px) {
+    .mento_topic_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .mento_award {
+        grid-template-columns: repeat(2, 1fr); /* 2개의 열로 변경 */
+    }
+    .mento_content_title {
+        font-size: 1.5rem;
+    }
+
+    .mento_content_comment {
+        font-size: 1rem;
+        padding-bottom: 40px;
+    }
+
+    .mento_ex_sec_icons {
+        gap: 8px;
+    }
+    
+    .mento_camp_title {
+        font-size: 1.688rem;
+    }
+    
+    .mento_camp_title_box img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .mento_question .question_box .question p {
+        font-size: 1rem;
+    }
+
+    .mento_question .question_box .question_wrap {
+        flex-direction: column;
+    }
+
+    .mento_question .question_box .question_wrap .question_icon {
+        display: none;
+    }
+
+    .mento_question .question_box .question_wrap:first-child .question:last-child::before {
+        top: -325px;
+        right: -20px;
+        width: 158px;
+    }
+
+    .mento_content_category_box .category {
+        padding: 16px;
+    }
+
+    .mento_info_box .info_div_list p {
+        font-size: 1rem;
+    }
+
+    .mento_info_box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mento_info_box .info_flot_list li {
+        font-size: 1rem;
+    }
+
+    .mento_procedure_title h4 {
+        font-size: 1.375rem;
+    } 
+}
+
+@media (max-width: 700px) {
+    .mento_content {
+        padding: 40px 20px;
+    }
+
+    .mento_reason_process {
+        margin-left: unset !important;
+    }
+
+    .mento_result_bg {
+        background-size: contain;
+    }
+
+    .mento_result_wings h4 {
+        font-size: 1.875rem;
+    }
+
+    .mento_result_wings p {
+        font-size: 1.75rem;
+    }
+
+    .mento_result_wings::before {
+        left: -23px;
+    }
+
+    .mento_result_wings::after {
+        right: -23px;
+    }
+
+    .mento_result_text > p {
+        font-size: 1rem;
+    }
+
+    .mento_result_text .percentage h4 {
+        font-size: 2.25rem;
+    }
+
+    .mento_result_text .percentage p {
+        font-size: 1.375rem;
+    }
+
+    .mento_question {
+        padding: 80px 8px;
+    }
+
+    .topic_img { 
+        height: unset;
+    }
+
+    .topic_text {
+        padding: 20px;
+    }
+
+    .topic_text .topic_title {
+        font-size: 1.25rem;
+    }
+
+    .topic_text .topic_desc p {
+        font-size: 1rem;
+    }
+
+    .mento_procedure_box:nth-child(2) {
+        overflow-x: hidden;
+    }
+}
+
+
+@media (max-width: 500px) { 
+    .mento_topic_list {
+        gap: 20px;
+    }
+
+    .mento_topic_list li {
+        width: 340px;
+    }
+
+    .mento_benefit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mento_benefit .mento_benefits_text p {
+        font-size: 1rem;
+    }
+
+    .mento_procedure {
+        max-width: 428px;
+    }
+
+    .mento_procedure_box {
+        padding: 24px 30px 40px;
+    }
+
+    .mento_procedure_box:first-child {
+        overflow-x: hidden;
+    }
+
+    .mento_procedure_circlebox:after {
+        min-width: 500px;
+    }
+
+    .mento_benefit .mento_benefits_box {
+        padding: 20px 30px;
+    }
+}
