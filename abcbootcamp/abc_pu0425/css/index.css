@@ -156,8 +156,9 @@ header {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
     header.active.edu_sub_header {
-        background-color: #fff;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     } 
     header.active.edu_sub_header .header_logo {
         background: url("../img/edu_header_logo_active.svg") no-repeat;
@@ -170,9 +171,9 @@ header {
         box-shadow: 0 3px 11px 2px rgba(108, 108, 108, 0.1);
     }
     header.active.edu_sub_header::before {
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.92);
         backdrop-filter: blur(5px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
     header.active.edu_sub_header .all {
         background-image: url("../img/edu_menu_active.svg");

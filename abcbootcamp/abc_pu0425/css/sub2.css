@@ -177,7 +177,7 @@
 }
 
 .cur_content.about_section {
-    padding: 120px 20px 60px;
+    padding: 120px 20px 0 20px;
 }
 
 .cur_content_wrap.about_foot_box {
@@ -192,12 +192,13 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1440px;
-    border-radius: 60px;
-    background: linear-gradient(90deg, #01B796 24.28%, #7759FF 100%);
+    border-radius:8px;
+    background: linear-gradient(90deg, #12224F 0%, #141D37 51.44%, #161713 100%);
     box-sizing: border-box;
     padding: 30px 70px;
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -217,7 +218,7 @@
     font-size: 1.125rem;
     line-height: normal;
     letter-spacing: -0.36px;
-    color: #B4FFF2;
+    color: #41C5E5;
 }
 
 .ab_absolute_btn_box button {
@@ -225,10 +226,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #222222;
+    color: #fff;
     padding: 10px 80px;
-    border-radius: 30px;
-    background-color: #FFFFFF;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #0844FF 0%, #052999 100%);
     font-size: 1.25rem;
     line-height: 150%;
     font-family: 'Pretendard-600';
@@ -390,10 +391,6 @@
 }
 
 @media (max-width: 666px) {
-    .ab_absolute_btn_box {
-        border-radius: 80px;
-    }
-
     .ab_absolute_btn_box button {
         padding: 10px 50px;
     }
@@ -1118,7 +1115,7 @@
     .mento_content.mento_content.explorer_content {
         padding: 40px 20px;
     }
-    .cur_content.curriculum_wrap {
+    .ex_wrap.curriculum_wrap {
         padding: 80px 20px 0 20px;
     }
     .cur_content.ex_result {

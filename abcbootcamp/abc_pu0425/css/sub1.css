@@ -841,6 +841,12 @@
     gap: 12px;
 }
 
+.cur_tracktext > .cur_procedure_desc {
+    padding-top: 0;
+    margin-top: -8px;
+    color: #999;
+}
+
 .cur_tracktext p {
     color: #222222;
     font-size: 1.25rem;
@@ -902,7 +908,7 @@
     font-family: 'Pretendard-500';
 }
 
-.info_ul_list li:not(:nth-child(3)):before {
+/* .info_ul_list li:not(:nth-child(3)):before {
     content: "";
     display: inline-flex;
     position: absolute;
@@ -912,7 +918,7 @@
     right: -20px;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
 .info_div_list p {
     color: #444444;
