@@ -132,23 +132,23 @@ input[type="file"] {
 }
 
 input::-webkit-input-placeholder {
-    color: #a2a2a2;
-    font-weight: 200;
+    color: #999999;
+    font-weight: 300;
 }
 
 input:-ms-input-placeholder {
-    color: #a2a2a2;
-    font-weight: 200;
+    color: #999999;
+    font-weight: 300;
 }
 
 input::-ms-input-placeholder {
-    color: #a2a2a2;
-    font-weight: 200;
+    color: #999999;
+    font-weight: 300;
 }
 
 input::placeholder {
-    color: #a2a2a2;
-    font-weight: 200;
+    color: #999999;
+    font-weight: 300;
 }
 
 input[type="text"],
@@ -3110,7 +3110,7 @@ button::-moz-focus-inner,
 .boardtype {
     position: relative;
     display: flex;
-    margin-bottom: 2em;
+    margin-bottom: 2.2em;
     justify-content: center;
 }
 
@@ -3118,7 +3118,6 @@ button::-moz-focus-inner,
     display: flex;
     position: relative;
     background-color: #fff;
-    padding: 0.5rem;
     border-radius: 99px;
 }
 
@@ -3134,38 +3133,22 @@ button::-moz-focus-inner,
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 42px;
-    width: 125px;
-    font-size: 1em;
-    font-weight: 500;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-family: 'pretendard-600';
     border-radius: 99px;
     cursor: pointer;
     transition: color 0.1s ease-in;
     margin: 0 5px;
     color: #565656;
-    background: #f5f5f5;
+    border: 1px solid #ddd;
     position: relative;
-}
-
-.boardtype .tab-link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    margin: auto;
-    border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
-    border-top: 6px solid #13927e;
-    display: none;
 }
 
 .boardtype input[type="radio"]:checked + label {
     color: #fff;
-    background: #13927e;
+    background: #052999;
+    border: 1px solid transparent;
 }
 
 .boardtype input[type="radio"]:checked + label.tab-link:before {
@@ -3219,10 +3202,6 @@ button::-moz-focus-inner,
 .boardWrap .tab-content.current {
     display: block;
     width: 100%;
-    padding: 50px 50px 30px;
-    background: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-    border-radius: 40px;
     font-family: "Pretendard";
 }
 
@@ -3535,7 +3514,6 @@ button::-moz-focus-inner,
 .photoboard .list > li {
     float: left;
     border-collapse: collapse;
-    width: 33.333%;
     padding: 0 1.4em 1.4em 0;
     height: 465px;
     list-style: none;
@@ -4599,7 +4577,6 @@ textarea {
     background-color: #fff;
     display: flex;
     align-items: center;
-    border: 1px solid #e5e5e5;
 }
 
 .bd_srch_box2 .form_inp .form_sel {
@@ -4620,12 +4597,12 @@ textarea {
 }
 
 .bd_srch_box2 .form_inp input {
-    border-radius: 40px;
-    font-size: 15px;
+    font-size: 17px;
     height: 100%;
     width: 100%;
-    padding: 5px 70px 5px 30px;
-    background: transparent;
+    padding: 5px 60px 5px 30px;
+    border-radius: 10px;
+    background: #F3F5FA;
 }
 
 .bd_srch_box2 .common_btn {
@@ -4633,7 +4610,8 @@ textarea {
     content: "";
     width: 70px;
     height: 50px;
-    background: url("../img/subImages/srh_icon2.png") no-repeat center center;
+    background: url("../img/subImages/srh_icon.svg") no-repeat center center;
+    background-size: 24px 24px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -5117,8 +5095,22 @@ button {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
 }
-
+.edu_search_box  h5 {
+    color: #222;
+    font-family: 'Pretendard-600';
+    font-size: 36px;
+}
+.edu_list_box {
+    display: flex;
+}
+.edu_list_box .tagall {
+    width: 30%;
+}
+.edu_list_box .photoboard {
+    width: 70%;
+}
 .edu_tab {
     width: fit-content;
     flex: auto;
@@ -5143,10 +5135,6 @@ button {
 .edu_tab ul li.active {
     border-bottom: 4px solid #13927e;
     color: #13927e;
-}
-
-.edu_search_box .form_inp {
-    margin-bottom: 12px;
 }
 
 .edu_content {

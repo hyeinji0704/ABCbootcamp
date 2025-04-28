@@ -153,7 +153,7 @@ header {
 
 /*서브 헤더 */
     header.edu_sub_header {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
     }
     header.active.edu_sub_header {
         background-color: rgba(255, 255, 255, 0.88);

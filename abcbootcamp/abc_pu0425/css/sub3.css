@@ -31,21 +31,24 @@
 }
 
 /*news & 후기*/
+.cur_main.cur_story_bg {
+    min-height: 422px;
+    height: 422px;
+}
 .cur_main.cur_story_bg .bg_absolute_box {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
     /*background-image: url("../img/sub1/current_story_main.svg");*/
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 4s;
-    background-size: cover;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
-
+.cur_main.cur_story_bg .bg_absolute_box img {
+    width: 100%;
+    height: 100%;
+}
+.cur_story_bg .cur_main_title {
+    margin-top: 100px;
+}
 
 /*faq*/
 .cur_main.cur_faq_bg .bg_absolute_box {
@@ -70,3 +73,16 @@
 .cur_main_title {
     text-align: center;
 } */
+
+.cur_sub_tit {
+    color: #222;
+    font-family: 'Pretendard-700';
+    font-size: 46px;
+}
+.cur_sub_subtit {
+    color: #222;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
