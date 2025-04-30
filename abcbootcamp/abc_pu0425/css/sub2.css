@@ -631,7 +631,9 @@
     .about_mascot_wrap .cur_circle_1, .about_mascot_wrap .cur_circle_3 {
         gap: 20px;
     }
-    
+    .cur_main_title {
+        font-size: 44px;
+    }
 }
 
 

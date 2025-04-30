@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title> ABC 교육 </title>
+        <script src="./js/plugin/jquery/jquery-3.5.1.min.js"></script>
+        <script src="./js/plugin/jquery/slick.min.js"></script>
+        <script src="./js/default.js"></script>
+        <script src="./js/sub1.js"></script>
+        <script src="./js/index_exam.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <link rel="stylesheet" href="./css/slick-theme.css">
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main2.css">
+        <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/mentoring.css" type="text/css">
+        <link rel="stylesheet" href="./css/sub1.css">
+        <link rel="stylesheet" href="./css/sub2.css">
+        <link rel="stylesheet" href="./css/sub3.css">
+        <link rel="stylesheet" href="./css/index_exam.css">
+        <link rel="stylesheet" href="./css/index.css">
+    
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    
+            /* home page nav banner styles */
+    
+            .link_box1, .link_box2 {
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+    
+            .link_box1:hover, .link_box2:hover {
+                transform: translateY(-25px);
+            }
+    
+            .link:not(:hover) .link_box1,
+            .link:not(:hover) .link_box2 {
+                transform: translateY(0);
+            }
+    
+            .dropdown-content {
+                opacity: 0;
+                position: absolute;
+                transition: opacity 0.5s ease;
+            }
+    
+            li:hover .dropdown-content {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+<body>
+<header class="edu_sub_header">
+    <div class="header">
+        <div class="menu">
+            <h1><a href="/">
+                <div class="header_logo"></div>
+            </a>
+            </h1>
+            <!-- Example of how to use Django URL reversing -->
+            <a href="#" class="all" onclick="allMenu()"></a>
+            <div class="nav">
+                <h2><a href="/">ABC BOOTCAMP</a></h2>
+
+                <nav>
+                    <ul>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/about/">About</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/data_explorer/">교육소개</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/data_explorer/">데이터 탐험가</a></li>
+                                            
+                                        
+                                            
+                                                <li><a href="/abc_mentor/">ABC 프로젝트 멘토링</a></li>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/deep_diver/">딥 다이버</a></li>
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/abc_story">교육후기</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/abc_story/">News &amp; 후기</a></li>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/faq/">FAQ</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/abc_education/">신청하기</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                                <li><a href="/abc_education/">교육 신청</a></li>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/abcbootcamp/confirm_training/">신청 확인</a></li>
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+
+                        
+                    </ul>
+                </nav>
+                <a href="#" class="close" onclick="allMenuClose()">close</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- wrap -->
+<div id="wrap">
+    <!--컨텐츠영역-->
+    <div class="container">
+        <section class="content sub">
+            <div class="inner">
+                <!-- 서브 배너 -->
+                <section class="cur_main cur_story_bg ">
+                    <div class="bg_absolute_box">
+                        <img src="./img/sub1/current_re_main.svg" alt="">
+                    </div>
+                    <div class="cur_title_wrap">
+                        <h4 class="cur_main_title main_title_ani_1">
+                            신청하기
+                        </h4>
+                    </div>
+                </section>
+        </section>
+        <!-- 메인 섹션 -->
+        <div class="section_bg">
+            <div class="sub_con sub_con_detail">
+                <div class="edu_detail_wrap">
+                    <div class=" edu_detail_first_box">
+                        <div class="edu_detail_img edu_detail_title_box">
+                            <img src="https://abcbootcamp.kr/get_image/?fileId=FILE_000000000001170" alt="썸네일"/>
+                        </div>
+                        <div class="edu_detail_title_box " style="max-width: 100% ">
+                            <div class="info_box">
+                                <p class="edu_title">이승탈출넘버원</p>
+                                <ul class="li-tag">
+                                                                                            
+                                    <li>#프로젝트멘토링</li>
+                                    
+                                    <li>#보도자료</li>
+                                    
+                                </ul>                                
+                            </div>
+                            <button class="edu_btn " id="edu_btn"
+                                    onclick="window.location.href='/application/application_detail/EDUA_000000029/'"
+                                    >
+                                신청하기
+                            </button>
+
+                        </div>
+                        
+                    </div>
+                    <ul class="edu_ul ">
+                        <li>
+                            <p class="edu_sub_title"></span>모집기간</p>
+                            <span class="edu_sub_info">2025-03-24 ~ 2026-03-24</span>
+                        </li>
+                        <li>
+                            <p class="edu_sub_title"></span>교육기간</p>
+                            <span class="edu_sub_info">2025-03-24 ~ 2026-03-24</span>
+                        </li>
+                        <li>
+                            <p class="edu_sub_title"></span>교육대상</p>
+                            
+                            <span class="edu_sub_info">1</span>
+                            
+                        </li>
+                        <li>
+                            <p class="edu_sub_title"></span>교육장소</p>
+                            
+                                <span class="edu_sub_info">1</span>
+                            
+                        </li>
+                        <li>
+                            <p class="edu_sub_title"></span>모집방법</p>
+                            
+                            <span class="edu_sub_info">1</span>
+                            
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="edu_datail_floater">
+                        <div class="edu_float_text">
+                            ABC 프로젝트 멘토링에
+                            <span>참여기업으로 함께할 기업을</span>
+                            모집합니다.
+                        </div>
+                        <a class="edu_float_btn" href="/abc_education/" >신청하기</a>
+                    </div>
+                    <div class="edu_detail_box edu_border">
+                        <h2 class="edu_content_title"><img src="./img/sub1/camp_icon.svg" alt="#">교육소개</h2>
+                        <div class="edu_textbox" style="word-break: break-all;">
+                            <div><p>🔹<strong>참여 대상</strong></p><br><br><p>▶만 18세 이상 ~ 만 34세 이하 미취업 청년</p><br><br><p>🔹<strong>모집직무 및 프로젝트 주제</strong></p><br><br><p>▶IT : 배리어프리 기반의 소프트웨어 기획 및 개발<br /><br>▶광고&middot;마케팅 : 데이터 분석과 SNS 활용 전략 기반 마케팅 수행</p><br><br><p>🔹<strong>활동 기간</strong></p><br><br><p>▶사전 교육(대면)<br /><br>&nbsp;: 25.04.15.(화) ~ 25.04.17.(목) 오전 10시 ~ 오후 4시<br /><br>▶일경험 프로젝트(자율)<br /><br>&nbsp;: 25.04.21.(월) ~ 25.06.01.(일)</p><br><br><p>* 사전 교육 이수 후, 멘토 및 팀원들과 장소 및 일정을 자율적으로 조율하여 대면 프로젝트 진행</p><br><br><p>🔹<strong>사전 교육 장소</strong></p><br><br><p>▶ 대전지식산업센터(대동역 1번 출구 인근)</p><br><br><p>🔹<strong>모집 기간</strong></p><br><br><p>▶ 4월 6일까지</p><br><br><p>🔹<strong>추가 모집 정보</strong></p><br><br><p>▶ 매월 모집 직무 및 프로젝트가 달라집니다. 공식 인스타그램을 팔로우하시면 모집 정보를 가장 빠르게 확인하실 수 있습니다.</p><br><br><p>공식 인스타그램 :&nbsp;<a href="https://www.instagram.com/abcbootcamp.kr/">https://www.instagram.com/abcbootcamp.kr/</a></p><br><br><hr /><br><p><img alt="" src="/get_image?fileId=CK_IMG_20250317181055720224&amp;addPath=ckedit" /></p><br><br><p><img alt="" src="/get_image?fileId=CK_IMG_20250317181125623970&amp;addPath=ckedit" /></p><br><br><p><img alt="" src="/get_image?fileId=CK_IMG_20250317181241650920&amp;addPath=ckedit" /></p><br><br><p><img alt="" src="/get_image?fileId=CK_IMG_20250317181144416485&amp;addPath=ckedit" /></p><br></div><br></div>
+                        </div>
+                    </div>
+                    <div class="edu_detail_box edu_border">
+                        <h2 class="edu_content_title"><img src="./img/sub1/camp_icon.svg" alt="#">활동계획</h2>
+                        <div class="edu_textbox" style="word-break: break-all;">
+                            <img src="https://abcbootcamp.kr/get_image/?fileId=FILE_000000000001148">
+                        </div>
+                    </div>
+                    <div class="edu_detail_box edu_border">
+                        <h2 class="edu_content_title"><img src="./img/sub1/camp_icon.svg" alt="#">관련영상</h2>
+                        <div class="edu_video_box video-container">
+                            <iframe width="560" height="315" src="https://youtube.com/embed/SmrkXPBU_VY?si=l-gukdPvOUOF2etN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+
+                    <div class="edu_detail_box edu_border">
+                        <h2 class="edu_content_title"><img src="./img/sub1/camp_icon.svg" alt="#">자주 묻는 질문</h2>
+                        <div class="" style="word-break: break-all;">
+                            <ul class="edu_que_lists" style="border:none;" id="edu_que_lists">
+                                <!-- <div class="bold" style="font-size: 1.5rem; border-bottom: 1px solid black; border-top: 1px solid black;">
+                                    자주 묻는 질문
+                                </div> -->
+                                
+                                    <!-- 1569 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                                    <!-- 1833 / 1840,1833,1736,1730,1571-->
+                                    
+                                        <li class="">
+                                            <div class="edu_que_list">
+                                                <div class="edu_que_title">
+                                                    <div class="edu_que_txt"><i>Q.</i>안녕하세요</div>
+                                                    <div class="edu_acc_arrow"><img src="./img/subImages/bu-openable.png" alt=""></div>
+                                                </div>
+                                                <div class="edu_que_content">
+                                                    <pre>전액 무료이며 참여자들이 경제적 문제를 걱정하지 않고 교육에만 집중할 수 있게 월별 참여자 활동 장려금도 지원합니다.</pre>
+                                                </div>
+                                            </div>
+                                            <div class="edu_que_line"></div>
+                                        </li>
+                                    
+                                
+                                    <!-- 1836 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                                    <!-- 1840 / 1840,1833,1736,1730,1571-->
+                                    
+                                        <li class="">
+                                            <div class="edu_que_list">
+                                                <div class="edu_que_title">
+                                                    <div class="edu_que_txt"><i>Q.</i>안녕하세요</div>
+                                                    <div class="edu_acc_arrow"><img src="./img/subImages/bu-openable.png" alt=""></div>
+                                                </div>
+                                                <div class="edu_que_content">
+                                                    <pre>전액 무료이며 참여자들이 경제적 문제를 걱정하지 않고 교육에만 집중할 수 있게 월별 참여자 활동 장려금도 지원합니다.</pre>
+                                                </div>
+                                            </div>
+                                            <div class="edu_que_line"></div>
+                                        </li>
+                                    
+                                
+                                    <!-- 1571 / 1840,1833,1736,1730,1571-->
+                                    
+                                        <li class="">
+                                            <div class="edu_que_list">
+                                                <div class="edu_que_title">
+                                                    <div class="edu_que_txt"><i>Q.</i>안녕하세요</div>
+                                                    <div class="edu_acc_arrow"><img src="./img/subImages/bu-openable.png" alt=""></div>
+                                                </div>
+                                                <div class="edu_que_content">
+                                                    <pre>전액 무료이며 참여자들이 경제적 문제를 걱정하지 않고 교육에만 집중할 수 있게 월별 참여자 활동 장려금도 지원합니다.</pre>
+                                                </div>
+                                            </div>
+                                            <div class="edu_que_line "></div>
+                                        </li>
+                                    
+                                
+                                    <!-- 1572 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                                    <!-- 1573 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                                    <!-- 1728 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                                    <!-- 1729 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                                    <!-- 1730 / 1840,1833,1736,1730,1571-->
+                                    
+                                        <li class="">
+                                            <div class="edu_que_list">
+                                                <div class="edu_que_title ">
+                                                    <div class="edu_que_txt"><i>Q.</i>안녕하세요</div>
+                                                    <div class="edu_acc_arrow"><img src="./img/subImages/bu-openable.png" alt=""></div>
+                                                </div>
+                                                <div class="edu_que_content">
+                                                    <pre>전액 무료이며 참여자들이 경제적 문제를 걱정하지 않고 교육에만 집중할 수 있게 월별 참여자 활동 장려금도 지원합니다.</pre>
+                                                </div>
+                                            </div>
+                                            <div class="edu_que_line"></div>
+                                        </li>
+                                    
+                                
+                                    <!-- 1733 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                                    <!-- 1574 / 1840,1833,1736,1730,1571-->
+                                    
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="back_btn_wrap">
+                        <button class="back_btn" onclick="history.back();">목록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 메인 섹션 -->
+
+    </div>
+
+    <!-- 플로팅 신청버튼과 문구 -->
+    <div class="applfloater" style="display: none;">
+        <div class="float_text" style="word-break: break-all;">
+            ABC 프로젝트 멘토링에
+            <span>참여기업으로 함께할 기업을</span>
+            모집합니다.
+        </div>
+        <button class="float_button "
+                onclick="window.location.href='/application/application_detail/EDUA_000000029/'"
+                >
+            신청하기
+        </button>
+    </div>
+
+    <!-- //컨텐츠영역 -->
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const floatingBtn = document.querySelector(".applfloater");
+        const targetObject = document.getElementById("edu_btn");
+        const sectionBg = document.querySelector(".section_bg");
+    
+        function checkVisibility() {
+            const targetRect = targetObject.getBoundingClientRect();
+            const sectionRect = sectionBg.getBoundingClientRect();
+            
+            // 특정 오브젝트가 화면에 없고, section_bg 영역 안에 있을 때만 표시
+            if (targetRect.bottom < 0 && sectionRect.bottom > window.innerHeight) {
+                floatingBtn.style.display = "flex";
+            } else {
+                floatingBtn.style.display = "none";
+            }
+        }
+    
+        window.addEventListener("scroll", checkVisibility);
+    });
+</script>
+
+<!-- //wrap -->
+
+<footer class="edu_footer">
+    <div class="wrap">
+        <div class="f_top">
+            <p>
+                <span class="f_tit">사업자명</span>
+                <span class="f_space">|</span>
+                <span >(주)유클리드소프트</span>
+                <span class="f_space">|</span>
+                <span class="f_tit">대표</span>
+                <span class="f_space">|</span>
+                <span>채은경, 박주한</span>
+                <span class="f_space">|</span>
+                <span class="f_tit">사업자번호</span>
+                <span class="f_space">|</span>
+                <span>314-86-59383</span>
+            </p>
+            <p>
+                <span class="f_tit">주소</span>
+                <span class="f_space">|</span>
+                <span>대전 동구 계족로 151 (대전지식산업센터) 6층</span>
+                <span class="f_space">|</span> 
+                <span class="f_tit">TEL</span>
+                <span class="f_space">|</span>
+                <span>042-335-6589</span>
+                <span class="f_space">|</span>
+                <span class="f_tit">E-mail</span>
+                <span class="f_space">|</span>   
+                <span>euclidsoft.edu@gmail.com</span>
+            </p>
+        </div>
+        <div class="f_btm">
+            <div class="copyright">ⓒ ABC BOOTCAMP. ALL RIGHTS RESERVED.</div>
+            <div class="social-media">
+              <ul class="social-media-list">
+                <li class="social_item"><a href="https://blog.naver.com/abc_bootcamp" target="_blank" title="새창">
+                    <img src="./img/f_blog.svg" alt=""></a></li>
+                <li class="social_item"><a href="https://www.instagram.com/abcbootcamp.kr/" target="_blank" title="새창">
+                    <img src="./img/f_insta.svg" alt=""></a></li>
+                <li class="social_item"><a href="http://pf.kakao.com/_pDpyb/chat" target="_blank" title="새창">
+                    <img src="./img/f_talk.svg" alt=""></a></li>
+                <li class="social_item"><a href="https://www.youtube.com/@abcbootcamp" target="_blank" title="새창">
+                    <img src="./img/f_youtube.svg" alt=""></a></li>
+                <li class="social_item"><a href="https://limeedu.kr" target="_blank" title="새창">
+                    <img src="./img/f_edu.svg" alt=""></a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="floatbox light">
+    <div class="floatbox_top">
+        <a href="/abc_education/">
+            <img class="dark" src="./img/floatbox_top.svg" alt="">
+            <img class="light" src="./img/floatbox_top_light.svg" alt="">
+            <p class="text">신청하기</p>
+        </a>
+    </div>
+    <div class="floatbox_bot">
+        <a href="http://pf.kakao.com/_pDpyb/chat">
+            <img src="./img/floatbox_bot.svg" alt="">
+            <p class="text">문의하기</p>
+        </a>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title> 신청하기 </title>
+        <script src="./js/plugin/jquery/jquery-3.5.1.min.js"></script>
+        <script src="./js/plugin/jquery/slick.min.js"></script>
+        <script src="./js/sub1.js"></script>
+        <script src="./js/index_exam.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <link rel="stylesheet" href="./css/slick-theme.css">
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/content.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main2.css">
+        <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/mentoring.css" type="text/css">
+        <link rel="stylesheet" href="./css/sub1.css">
+        <link rel="stylesheet" href="./css/sub2.css">
+        <link rel="stylesheet" href="./css/sub3.css">
+        <link rel="stylesheet" href="./css/index_exam.css">
+        <link rel="stylesheet" href="./css/index.css">
+    
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    
+            /* home page nav banner styles */
+    
+            .link_box1, .link_box2 {
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+    
+            .link_box1:hover, .link_box2:hover {
+                transform: translateY(-25px);
+            }
+    
+            .link:not(:hover) .link_box1,
+            .link:not(:hover) .link_box2 {
+                transform: translateY(0);
+            }
+    
+            .dropdown-content {
+                opacity: 0;
+                position: absolute;
+                transition: opacity 0.5s ease;
+            }
+    
+            li:hover .dropdown-content {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+<body>
+<header class="edu_sub_header">
+    <div class="header">
+        <div class="menu">
+            <h1><a href="/">
+                <div class="header_logo"></div>
+            </a>
+            </h1>
+            <!-- Example of how to use Django URL reversing -->
+            <a href="#" class="all" onclick="allMenu()"></a>
+            <div class="nav">
+                <h2><a href="/">ABC BOOTCAMP</a></h2>
+
+                <nav>
+                    <ul>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/about/">About</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/data_explorer/">교육소개</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/data_explorer/">데이터 탐험가</a></li>
+                                            
+                                        
+                                            
+                                                <li><a href="/abc_mentor/">ABC 프로젝트 멘토링</a></li>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/deep_diver/">딥 다이버</a></li>
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/abc_story">교육후기</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/abc_story/">News &amp; 후기</a></li>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/faq/">FAQ</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <!-- 표층 메뉴 -->
+                                    <a href="/abc_education/">신청하기</a>
+                                    <ul class="dropdown-content">
+                                        <!-- 심층 메뉴 -->
+                                        
+                                            
+                                                <li><a href="/abc_education/">교육 신청</a></li>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                <li><a href="/abcbootcamp/confirm_training/">신청 확인</a></li>
+                                            
+                                        
+                                            
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+
+                        
+                    </ul>
+                </nav>
+                <a href="#" class="close" onclick="allMenuClose()">close</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- wrap -->
+<div id="wrap">
+    <!--컨텐츠영역-->
+    <div class="container">
+        <!-- content 부분 -->
+        <form id="listForm" name="listForm" action="">
+            <div class="container">
+                <section class="content sub">
+                    <div class="inner">
+                        <section class="cur_main cur_story_bg ">
+                            <div class="bg_absolute_box">
+                                <img src="./img/sub1/current_re_main.svg" alt="">
+                            </div>
+                            <div class="cur_title_wrap">
+                                <h4 class="cur_main_title main_title_ani_1">
+                                    신청하기
+                                </h4>
+                            </div>
+                        </section>
+
+                        <div class="section_bg">
+                            <div class="sub_con">
+                                <div class="edu_full_box">
+                                    <h2 class="cur_sub_tit">Enhance Your Competency!</h2>
+                                    <p class="cur_sub_subtit">여러분의 역량을 높일 AI/SW 교육을 경험하세요.</p>
+                                </div>
+
+                                <div class="edu_search_box bd_srch_box2">
+                                    <div class="edu_tab">
+                                        <ul class="faq_tab_nav">
+                                            <li class="tab-btn active" data-status="all">
+                                                <a href="?status=all" >전체</a>
+                                            </li>
+                                            <li class="tab-btn" data-status="모집중">
+                                                <a href="?status=모집중" >모집중</a>
+                                            </li>
+                                            <li class="tab-btn" data-status="모집종료">
+                                                <a href="?status=모집종료" >모집종료</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="form_inp">
+                                        <input type="text" autocomplete="off" id="searchKeyword" name="searchKeyword"
+                                               title="검색어 입력" value="" placeholder="검색어를 입력해주세요."
+                                               onkeypress="enterSearch()">
+                                        <button type="submit" class="common_btn" onkeypress="enterSearch()"></button>
+                                    </div>
+                                </div>
+
+                                <div class="edu_content">
+                                    
+                                    <li onclick="location.href='abc_education_detail/EDUA_000000029'" >
+                                        <div class="edu_card">
+                                            <div class="edu_card_img">
+                                                <img src="" alt="썸네일 이미지">
+                                                
+                                            </div>
+                                            <div class="edu_card_info">
+                                                
+                                                <div class="edu_card_title_box">
+                                                    <span class="edu_classification">1</span>
+                                                    <p class="edu_title">이승탈출넘버원이승탈출넘버원이승탈출넘버원</p>
+                                                </div>
+                                                <ul class="li-tag">
+                                                                                            
+                                                    <li>#프로젝트멘토링</li>
+                                                    
+                                                    <li>#보도자료</li>
+                                                    
+                                                </ul>
+                                                <ul class="edu_ul">
+                                                    <li>
+                                                        <p class="edu_sub_title">모집기간</p>
+                                                        <span class="edu_sub_info">2025-03-24~2026-03-24</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육기간</p>
+                                                        <span class="edu_sub_info">2025-03-24~2026-03-24</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육대상</p>
+                                                        
+                                                        <span class="edu_sub_info">1</span>
+                                                        
+                                                    </li>
+                                                </ul>
+                                                <span class="edu_card_current recruiting">모집중</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li onclick="location.href='abc_education_de.html'" >
+                                        <div class="edu_card">
+                                            <div class="edu_card_img">
+                                                <img src="https://abcbootcamp.kr/get_image/?fileId=FILE_000000000001170" alt="썸네일 이미지">
+                                                <!-- 임시링크입니다. 지우셔도 됩니다 -->
+                                            </div>
+                                            <div class="edu_card_info">
+                                                
+                                                <div class="edu_card_title_box">
+                                                    <span class="edu_classification">None</span>
+                                                    <p class="edu_title">2기 참여자 모집(한남대)</p>
+                                                </div>
+                                                <ul class="li-tag">
+                                                                                            
+                                                    <li>#프로젝트멘토링</li>
+                                                    
+                                                    <li>#보도자료</li>
+                                                    
+                                                </ul>
+                                                <ul class="edu_ul">
+                                                    <li>
+                                                        <p class="edu_sub_title">모집기간</p>
+                                                        <span class="edu_sub_info">2025-03-13~2025-12-23</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육기간</p>
+                                                        <span class="edu_sub_info">2024-05-27~2024-06-24</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육대상</p>
+                                                        
+                                                    </li>
+                                                </ul>
+                                                <span class="edu_card_current recruiting">모집중</span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li onclick="location.href='abc_education_detail/EDUA_000000030'" >
+                                        <div class="edu_card">
+                                            <div class="edu_card_img">
+                                                <img src="" alt="썸네일 이미지">
+                                                
+                                            </div>
+                                            <div class="edu_card_info">
+                                               
+                                                <div class="edu_card_title_box">
+                                                    <span class="edu_classification">2</span>
+                                                    <p class="edu_title">생성시점테스트</p>
+                                                </div>
+                                                <ul class="li-tag">
+                                                                                            
+                                                    <li>#프로젝트멘토링</li>
+                                                    
+                                                    <li>#보도자료</li>
+                                                    
+                                                </ul>
+                                                <ul class="edu_ul">
+                                                    <li>
+                                                        <p class="edu_sub_title">모집기간</p>
+                                                        <span class="edu_sub_info">2025-03-23~2025-05-30</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육기간</p>
+                                                        <span class="edu_sub_info">2025-04-01~2025-04-04</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육대상</p>
+                                                        
+                                                        <span class="edu_sub_info">만 18세 이상 ~ 만 34세 이하의
+                                                            미취업 청년</span>
+                                                        
+                                                    </li>
+                                                </ul>
+                                                <span class="edu_card_current recruiting">모집중</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li onclick="location.href='abc_education_detail/EDUA_000000025'" >
+                                        <div class="edu_card">
+                                            <div class="edu_card_img">
+                                                <img src="" alt="썸네일 이미지">
+                                                
+                                                <div class="img-overlay"></div>
+                                                
+                                            </div>
+                                            <div class="edu_card_info">
+                                                
+                                                <div class="edu_card_title_box">
+                                                    <span class="edu_classification">ABC 부트캠프 3기/4기</span>
+                                                    <p class="edu_title">ABC 부트캠프 3기/4기 통합 모집</p>
+                                                </div>
+                                                <ul class="li-tag">
+                                                                                            
+                                                    <li>#프로젝트멘토링</li>
+                                                    
+                                                    <li>#보도자료</li>
+                                                    
+                                                </ul>
+                                                <ul class="edu_ul">
+                                                    <li>
+                                                        <p class="edu_sub_title">모집기간</p>
+                                                        <span class="edu_sub_info">2024-05-12~2024-08-14</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육기간</p>
+                                                        <span class="edu_sub_info">2024-06-24~2024-08-29</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육대상</p>
+                                                        
+                                                    </li>
+                                                </ul>
+                                                <span class="edu_card_current edu_closed">모집종료</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li onclick="location.href='abc_education_detail/EDUA_000000027'" >
+                                        <div class="edu_card">
+                                            <div class="edu_card_img">
+                                                <img src="" alt="썸네일 이미지">
+                                                
+                                                <div class="img-overlay"></div>
+                                                
+                                            </div>
+                                            <div class="edu_card_info">
+                                                
+                                                <div class="edu_card_title_box">
+                                                    <span class="edu_classification">None</span>
+                                                    <p class="edu_title">3기 참여자 모집</p>
+                                                </div>
+                                                <ul class="li-tag">
+                                                                                            
+                                                    <li>#프로젝트멘토링</li>
+                                                    
+                                                    <li>#보도자료</li>
+                                                    
+                                                </ul>
+
+                                                <ul class="edu_ul">
+                                                    <li>
+                                                        <p class="edu_sub_title">모집기간</p>
+                                                        <span class="edu_sub_info">2024-05-13~2024-06-16</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육기간</p>
+                                                        <span class="edu_sub_info">2024-06-03~2024-06-28</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육대상</p>
+                                                        
+                                                    </li>
+                                                </ul>
+                                                <span class="edu_card_current edu_closed">모집종료</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li onclick="location.href='abc_education_detail/EDUA_000000024'" >
+                                        <div class="edu_card">
+                                            <div class="edu_card_img">
+                                                <img src="" alt="썸네일 이미지">
+                                                
+                                                <div class="img-overlay"></div>
+                                                
+                                            </div>
+                                            <div class="edu_card_info">
+                                                
+                                                <div class="edu_card_title_box">
+                                                    <span class="edu_classification">None</span>
+                                                    <p class="edu_title">1기 참여자 모집</p>
+                                                </div>
+                                                <ul class="li-tag">
+                                                                                            
+                                                    <li>#프로젝트멘토링</li>
+                                                    
+                                                    <li>#보도자료</li>
+                                                    
+                                                </ul>
+                                                <ul class="edu_ul">
+                                                    <li>
+                                                        <p class="edu_sub_title">모집기간</p>
+                                                        <span class="edu_sub_info">2024-04-17~2024-06-15</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육기간</p>
+                                                        <span class="edu_sub_info">2024-05-07~2024-06-12</span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="edu_sub_title">교육대상</p>
+                                                        
+                                                    </li>
+                                                </ul>
+                                                <span class="edu_card_current edu_closed">모집종료</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </div>
+                                <div class="paging">
+                                    <div class="boardbtn">
+                                        <div class="pagination page">
+                                            <!-- First Page Link for Tab-1 -->
+                                            <a class="page_first" href="?status=all&page=" title="처음 페이지 이동">
+                                                <img src="/static/img/subImages/page_01.gif" alt="처음 페이지로">
+                                            </a>
+                
+                                            <!-- Previous Page Link for Tab-1 -->
+                                            <a class="page_left inactive"
+                                               href=""
+                                               title="이전 페이지로">
+                                                <img src="/static/img/subImages/page_02.gif" alt="이전 페이지로">
+                                            </a>
+                
+                                            <!-- Link to the current page (highlighted), and 2 pages to each side if they exist -->
+                                            
+                                                
+                                            <span class="current">1</span>
+                                            
+                                            <a href="?tab=tab-2&page2=2">2</a>
+                        
+                        
+                        
+                                            <a href="?tab=tab-2&page2=3">3</a>
+                                            
+                                            
+                                            
+                                            <a href="?tab=tab-2&page2=4">4</a>
+                                                
+                                            
+                
+                                            <!-- Next and Last Page Links for Tab-1 -->
+                                            <a class="page_right" href="?tab=tab-2&page2=2"
+                                                title="다음 페이지로">
+                                                <img src="./img/subImages/page_03.gif" alt="다음 페이지로">
+                                            </a>
+                
+                                            <a class="page_end" href="?status=all&page=1" title="마지막 페이지 이동">
+                                                <img src="/static/img/subImages/page_04.gif" alt="끝 페이지로">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="edu_footer">
+    <div class="wrap">
+        <div class="f_top">
+            <p>
+                <span class="f_tit">사업자명</span>
+                <span class="f_space">|</span>
+                <span >(주)유클리드소프트</span>
+                <span class="f_space">|</span>
+                <span class="f_tit">대표</span>
+                <span class="f_space">|</span>
+                <span>채은경, 박주한</span>
+                <span class="f_space">|</span>
+                <span class="f_tit">사업자번호</span>
+                <span class="f_space">|</span>
+                <span>314-86-59383</span>
+            </p>
+            <p>
+                <span class="f_tit">주소</span>
+                <span class="f_space">|</span>
+                <span>대전 동구 계족로 151 (대전지식산업센터) 6층</span>
+                <span class="f_space">|</span> 
+                <span class="f_tit">TEL</span>
+                <span class="f_space">|</span>
+                <span>042-335-6589</span>
+                <span class="f_space">|</span>
+                <span class="f_tit">E-mail</span>
+                <span class="f_space">|</span>   
+                <span>euclidsoft.edu@gmail.com</span>
+            </p>
+        </div>
+        <div class="f_btm">
+            <div class="copyright">ⓒ ABC BOOTCAMP. ALL RIGHTS RESERVED.</div>
+            <div class="social-media">
+              <ul class="social-media-list">
+                <li class="social_item"><a href="https://blog.naver.com/abc_bootcamp" target="_blank" title="새창">
+                    <img src="./img/f_blog.svg" alt=""></a></li>
+                <li class="social_item"><a href="https://www.instagram.com/abcbootcamp.kr/" target="_blank" title="새창">
+                    <img src="./img/f_insta.svg" alt=""></a></li>
+                <li class="social_item"><a href="http://pf.kakao.com/_pDpyb/chat" target="_blank" title="새창">
+                    <img src="./img/f_talk.svg" alt=""></a></li>
+                <li class="social_item"><a href="https://www.youtube.com/@abcbootcamp" target="_blank" title="새창">
+                    <img src="./img/f_youtube.svg" alt=""></a></li>
+                <li class="social_item"><a href="https://limeedu.kr" target="_blank" title="새창">
+                    <img src="./img/f_edu.svg" alt=""></a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="floatbox light">
+    <div class="floatbox_top">
+        <a href="/abc_education/">
+            <img class="dark" src="./img/floatbox_top.svg" alt="">
+            <img class="light" src="./img/floatbox_top_light.svg" alt="">
+            <p class="text">신청하기</p>
+        </a>
+    </div>
+    <div class="floatbox_bot">
+        <a href="http://pf.kakao.com/_pDpyb/chat">
+            <img src="./img/floatbox_bot.svg" alt="">
+            <p class="text">문의하기</p>
+        </a>
+    </div>
+</div>
+</body>
+
+</html>

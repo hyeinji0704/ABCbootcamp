@@ -76,13 +76,51 @@
 
 .cur_sub_tit {
     color: #222;
-    font-family: 'Pretendard-700';
-    font-size: 46px;
+    font-family: 'Pretendard-600';
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+.edu_full_box .cur_sub_tit {
+    margin-bottom: 0;
 }
 .cur_sub_subtit {
     color: #222;
     font-size: 20px;
     letter-spacing: -0.4px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 1080px) {
+    .cur_sub_tit {
+        font-size: 38px;
+    }
+    .cur_sub_subtit {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 36px;
+    }
+}
+@media (max-width: 860px) {
+    .cur_sub_tit {
+        font-size: 36px;
+    }
+    .cur_story_bg .cur_main_title {
+        font-size: 56px;
+    }
+    .cur_sub_subtit {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    
+}
+@media (max-width: 500px) {
+    .cur_sub_tit {
+        font-size: 30px;
+    }
+    .cur_story_bg .cur_main_title {
+        font-size: 40px;
+    }
 }

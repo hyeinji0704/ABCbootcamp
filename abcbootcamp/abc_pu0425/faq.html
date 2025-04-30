@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> FAQ </title>
+    <script src="./js/plugin/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/plugin/jquery/slick.min.js"></script>
+    <script src="./js/sub1.js"></script>
+    <script src="./js/index_exam.js"></script>
+    <script src="./js/default.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/mentoring.css" type="text/css">
+    <link rel="stylesheet" href="./css/sub1.css">
+    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="./css/index_exam.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        /* home page nav banner styles */
+
+        .link_box1, .link_box2 {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .link_box1:hover, .link_box2:hover {
+            transform: translateY(-25px);
+        }
+
+        .link:not(:hover) .link_box1,
+        .link:not(:hover) .link_box2 {
+            transform: translateY(0);
+        }
+
+        .dropdown-content {
+            opacity: 0;
+            position: absolute;
+            transition: opacity 0.5s ease;
+        }
+
+        li:hover .dropdown-content {
+            opacity: 1;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header class="edu_sub_header">
+        <div class="header ">
+            <div class="menu">
+                <h1>
+                    <a href="/">
+                        <div class="header_logo"></div>
+                    </a>
+                </h1>
+                <a href="#" class="all" onclick="allMenu()"></a>
+                <div class="nav">
+                    <h2>
+                        <a href="/">ABC BOOTCAMP</a>
+                    </h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./about.html">About</a></li>
+                            <li>
+                                <a href="/data_explorer.html">교육소개</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="./data_explorer.html">데이터 탐험가</a></li>
+                                    <li><a href="./mentoring.html" >ABC 프로젝트 멘토링</a></li>
+                                    <li><a href="./deep_diver.html">딥 다이버</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/abc_story">교육후기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_story">News & 후기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/faq/">FAQ</a></li>
+                            <li>
+                                <a href="/abc_education/">신청하기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_education/">교육신청</a></li>
+                                    <li><a href="/abcbootcamp/confirm_training/">신청확인</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="close" onclick="allMenuClose()">close</a>
+                </div> 
+            </div>
+        </div>
+    </header>
+
+
+        <div class="container">
+            <section class="content sub">
+                <div class="inner">
+                    <section class="cur_main cur_story_bg ">
+                        <div class="bg_absolute_box">
+                            <img src="./img/sub1/current_re_main.svg" alt="">
+                        </div>
+                        <div class="cur_title_wrap">
+                            <h4 class="cur_main_title main_title_ani_1">
+                                FAQ
+                            </h4>
+                        </div>
+                    </section>
+                    <div class="sub_con ">
+                        <div class="faq_tab_nav">
+                            <button class="tab-btn active">전체</button>
+                            <button class="tab-btn">ABC프로젝트멘토링</button>
+                            <button class="tab-btn">데이터탐험가</button>
+                            <button class="tab-btn">딥다이버</button>
+                        </div>
+                        <ul class="accordion tab-content" id="accordion">
+
+                            
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>내일배움카드를 발급 받아야 하나요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>아니요. 내일배움카드 발급 없이 참여 가능합니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>온라인으로 참여해도 되나요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>아니요. ABC 부트캠프의 모든 과정은 오프라인(대면) 교육입니다. 온라인 과정은 진행하지 않습니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>제가 학교 수업을 듣고 있는데 병행 참여가 가능한가요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>어떤 교육을 지원하시냐에 따라 달라집니다. 데이터 탐험가 과정은 참여가 불가하고 이외 교육은 카카오채널 혹은 전화(042-335-6589)로 문의 주시기 바랍니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>교육 비용은 얼마인가요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>ABC 부트캠프 교육 과정은 전액 무료입니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>데이터 탐험가 과정은 전공 상관없이 지원 가능한가요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>네, 데이터 탐험가 과정은 전공 상관없이 참여 가능합니다. 23년도에 진행한 ABC 부트캠프 데이터 탐험가 과정에서는 비전공자 비율이 70% 이상이었고, 24년도에 진행한 데이터 탐험가 과정에서 비전공자 비율은 68% 이상이었습니다. 전공/학력 상관없이 자신의 역량 향상 의지만 있다면 ABC 부트캠프는 누구든 환영합니다!</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>ABC 부트캠프 정보를 모아볼 수 있는 페이지가 있나요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>네, 홈페이지 &gt; ABC 스토리를 통해 보시거나, 더 많은 정보를 원하신다면 아래 ABC 부트캠프 공식 SNS 통해 확인하실 수 있습니다.
+                                        인스타그램: https://www.instagram.com/abcbootcamp.kr
+                                        네이버블로그: https://blog.naver.com/abc_bootcamp</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>4대보험 가입자인데 참여 가능한가요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>주 30시간 미만 근로자는 가능하며 30시간 이상 근무자는 참여가 불가합니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>숙박지원이 되나요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>아니요. 안됩니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q
+                                        </i>만 34세가 넘었는데 지원 가능한가요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>아니요, 지원자격이 되지 않아 불가능합니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q</i>신청서를 제출했는데 수정하고 싶습니다.<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>ABC 부트캠프 &gt; 교육신청 확인 메뉴에서 제출한 신청서 수정 가능합니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q</i>데이터 탐험가 과정은 교육이 평일에만 진행되나요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>네, 월~금에만 진행됩니다. 다만, 일정상 토요일 하루 정도 특강이 진행될 수도 있습니다. 그 외에는 모두 평일에 교육이 진행됩니다.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q</i>그 외 질문은 어디로 문의하면 되나요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>카카오채널 [유클리드소프트 혁신역량교육팀] 추가 후, 문의 주시거나 042-335-6589로 연락주세요.</pre>
+                                </div>
+                            </li>
+                        
+                            <li style="text-align:left" class="">
+                                <div class="acc_title">
+                                    <i>Q</i>데이터 탐험가 과정 겨울 방학 과정도 있나요?<span
+                                        class="acc_arrow"></span>
+                                </div>
+                                <div class="acc_content">
+                                    <pre><i>A</i>아니요. 방학 과정은 여름 방학 과정만 진행됩니다. 방학 과정에 참여하고 싶은 분은 여름 방학 과정에 지원해주셔야 합니다.</pre>
+                                </div>
+                            </li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="edu_footer">
+            <div class="wrap">
+                <div class="f_top">
+                    <p>
+                        <span class="f_tit">사업자명</span>
+                        <span class="f_space">|</span>
+                        <span >(주)유클리드소프트</span>
+                        <span class="f_space">|</span>
+                        <span class="f_tit">대표</span>
+                        <span class="f_space">|</span>
+                        <span>채은경, 박주한</span>
+                        <span class="f_space">|</span>
+                        <span class="f_tit">사업자번호</span>
+                        <span class="f_space">|</span>
+                        <span>314-86-59383</span>
+                    </p>
+                    <p>
+                        <span class="f_tit">주소</span>
+                        <span class="f_space">|</span>
+                        <span>대전 동구 계족로 151 (대전지식산업센터) 6층</span>
+                        <span class="f_space">|</span> 
+                        <span class="f_tit">TEL</span>
+                        <span class="f_space">|</span>
+                        <span>042-335-6589</span>
+                        <span class="f_space">|</span>
+                        <span class="f_tit">E-mail</span>
+                        <span class="f_space">|</span>   
+                        <span>euclidsoft.edu@gmail.com</span>
+                    </p>
+                </div>
+                <div class="f_btm">
+                    <div class="copyright">ⓒ ABC BOOTCAMP. ALL RIGHTS RESERVED.</div>
+                    <div class="social-media">
+                      <ul class="social-media-list">
+                        <li class="social_item"><a href="https://blog.naver.com/abc_bootcamp" target="_blank" title="새창">
+                            <img src="./img/f_blog.svg" alt=""></a></li>
+                        <li class="social_item"><a href="https://www.instagram.com/abcbootcamp.kr/" target="_blank" title="새창">
+                            <img src="./img/f_insta.svg" alt=""></a></li>
+                        <li class="social_item"><a href="http://pf.kakao.com/_pDpyb/chat" target="_blank" title="새창">
+                            <img src="./img/f_talk.svg" alt=""></a></li>
+                        <li class="social_item"><a href="https://www.youtube.com/@abcbootcamp" target="_blank" title="새창">
+                            <img src="./img/f_youtube.svg" alt=""></a></li>
+                        <li class="social_item"><a href="https://limeedu.kr" target="_blank" title="새창">
+                            <img src="./img/f_edu.svg" alt=""></a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="floatbox light">
+            <div class="floatbox_top">
+                <a href="/abc_education/">
+                    <img class="dark" src="./img/floatbox_top.svg" alt="">
+                    <img class="light" src="./img/floatbox_top_light.svg" alt="">
+                    <p class="text">신청하기</p>
+                </a>
+            </div>
+            <div class="floatbox_bot">
+                <a href="http://pf.kakao.com/_pDpyb/chat">
+                    <img src="./img/floatbox_bot.svg" alt="">
+                    <p class="text">문의하기</p>
+                </a>
+            </div>
+        </div>
+
+        <script>
+            // 탭 전환 기능
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // 모든 탭 버튼에서 active 클래스 제거
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    // 클릭한 탭 버튼에 active 클래스 추가
+                    button.classList.add('active');
+                    
+                    // 여기에 탭 콘텐츠 전환 로직을 추가할 수 있습니다
+                    // 실제 구현에서는 각 탭에 해당하는 콘텐츠를 보여주는 코드가 필요합니다
+                });
+            });
+        </script>
+        </body>
+        
+        </html>

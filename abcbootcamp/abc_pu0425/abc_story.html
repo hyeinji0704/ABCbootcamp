@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title> ABC About </title>
+    <title> News & 후기 </title>
     <script src="./js/plugin/jquery/jquery-3.5.1.min.js"></script>
     <script src="./js/plugin/jquery/slick.min.js"></script>
     <script src="./js/sub1.js"></script>
@@ -57,71 +57,51 @@
 </head>
 
 <body>
-<header class="edu_sub_header">
-    <div class="header">
-        <div class="menu">
-            <h1><a href="/">
-                <div class="header_logo"></div>
-            </a>
-            </h1>
-            <!-- Example of how to use Django URL reversing -->
-            <a href="#" class="all" onclick="allMenu()"></a>
-            <div class="nav">
-                <h2><a href="/">ABC BOOTCAMP</a></h2>
-
-                <nav>
-                    <ul>
-                        
+    <header class="edu_sub_header">
+        <div class="header ">
+            <div class="menu">
+                <h1>
+                    <a href="/">
+                        <div class="header_logo"></div>
+                    </a>
+                </h1>
+                <a href="#" class="all" onclick="allMenu()"></a>
+                <div class="nav">
+                    <h2>
+                        <a href="/">ABC BOOTCAMP</a>
+                    </h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./about.html">About</a></li>
                             <li>
-                                <a href="/about/">About</a>
-                                
+                                <a href="/data_explorer.html">교육소개</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="./data_explorer.html">데이터 탐험가</a></li>
+                                    <li><a href="./mentoring.html" >ABC 프로젝트 멘토링</a></li>
+                                    <li><a href="./deep_diver.html">딥 다이버</a></li>
+                                </ul>
                             </li>
-                        
                             <li>
-                                <a href="/data_explorer/">ABC 부트캠프</a>
-                                
-                                    <ul class="dropdown-content">
-                                        
-                                            <li><a href="/data_explorer/">데이터 탐험가</a></li>
-                                        
-                                            <li><a href="/deep_diver/">딥 다이버</a></li>
-                                        
-                                        <li><a href="/abcbootcamp/confirm_training/">교육신청 확인</a></li>
-                                    </ul>
-                                
+                                <a href="/abc_story">교육후기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_story">News & 후기</a></li>
+                                </ul>
                             </li>
-                        
+                            <li><a href="/faq/">FAQ</a></li>
                             <li>
-                                <a href="/abc_story">News &amp; 후기</a>
-                                
+                                <a href="/abc_education/">신청하기</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="/abc_education/">교육신청</a></li>
+                                    <li><a href="/abcbootcamp/confirm_training/">신청확인</a></li>
+                                </ul>
                             </li>
-                        
-                            <li>
-                                <a href="/faq/">FAQ</a>
-                                
-                            </li>
-                        
-                        <li><a class="" href="/abc_education/" >신청하기</a></li>
-
-                        <figure class="header_link_wrap">
-                            <a href="" class="header_link"></a>
-                            <div class="header_link_hoveract">
-                                <div>
-                                    <a href="https://blog.naver.com/abc_bootcamp"><span></span>네이버 블로그</a>
-                                    <a href="https://www.instagram.com/abcbootcamp.kr/"><span></span>공식 인스타그램</a>
-                                    <a href="https://www.youtube.com/@abcbootcamp"><span></span>공식 유튜브</a>
-                                    <a href="http://pf.kakao.com/_pDpyb/chat"><span></span>카카오톡 상담</a>
-                                </div>
-                            </div>
-                        </figure>
-                    </ul>
-                </nav>
-                <a href="#" class="close" onclick="allMenuClose()">close</a>
+                        </ul>
+                    </nav>
+                    <a href="#" class="close" onclick="allMenuClose()">close</a>
+                </div> 
             </div>
         </div>
-
-    </div>
-</header>
+    </header>
 
 
 <div class="container">
@@ -137,8 +117,8 @@
             </div>
         </section>
         <div class="sub_con">
-            <h5 class="cur_sub_tit">뉴스 · 후기</h5> 
-            <p class="cur_sub_subtit">ABC 부트캠프에 대해 알려드립니다.</p>
+            <h5 class="cur_sub_tit">ABC 부트캠프에 대해 알려드립니다</h5> 
+            
             <div class="boardtype">
                 <div class="tabs ">
                     <input type="radio" id="radio-1" name="tabs" data-tab="tab-1" checked>
@@ -151,15 +131,6 @@
             <!-- boardtype class end -->
             <div class="boardWrap">
                 <div id="tab-1" class="tab-content current">
-                    <div class="edu_search_box bd_srch_box2">
-                        <h5>전체</h5>
-                        <div class="form_inp">
-                            <input type="text" autocomplete="off" id="searchKeyword" name="searchKeyword"
-                                   title="검색어 입력" value="" placeholder="검색어를 입력해주세요."
-                                   onkeypress="enterSearch()">
-                            <button type="submit" class="common_btn" onkeypress="enterSearch()"></button>
-                        </div>
-                    </div>
                     <div class="edu_list_box">
                         <!-- tags -->
                         <div class="tagall">
@@ -354,9 +325,7 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 4월 23일</span>
-                                            <ul class="li-tag">
+                                           <ul class="li-tag">
                                                 
                                                 <li>#데이터탐험가</li>
                                                 
@@ -365,6 +334,9 @@
                                                 <li>#ABC 부트캠프</li>
                                                 
                                             </ul>
+
+                                            <span class="li-date">2025년 4월 23일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -403,15 +375,15 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 4월 18일</span>
                                             <ul class="li-tag">
-                                                
+                                                                                            
                                                 <li>#프로젝트멘토링</li>
                                                 
                                                 <li>#ABC 교육</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 4월 18일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -450,10 +422,8 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 4월 11일</span>
                                             <ul class="li-tag">
-                                                
+                                                                                            
                                                 <li>#데이터탐험가</li>
                                                 
                                                 <li>#ABC 교육</li>
@@ -461,6 +431,8 @@
                                                 <li>#ABC 부트캠프</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 4월 11일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -476,6 +448,7 @@
 
                                         <div class="li-text">
                                             <h4 class="li-head">[ABC 프로젝트 멘토링] 모집마감 D-3! (4월 IT/광고·마케팅 과정)</h4>
+                                            
                                             <p id="nttCnHtml4" class="li-summary"><br><br><br><br>&amp;nbsp;<br><br>&amp;nbsp;🔥마감임박🔥 6주 동안 기업 직무 프로젝트 경험하기!(IT/광고마케팅 과정)<br><br>&amp;nbsp;<br><br>6주 만에 기업 직무 프로젝트로 취업 경쟁력을 쌓는<br>모집이 곧 마감된다는 소식👀<br>늦기 전에 신청하러 가자! 🏃&amp;zwj;♀️🏃&amp;zwj;♂️<br><br>⭐ 전문가 멘토링 + 개인 지원금 47만원 + 팀 지원금 180만원 지원!<br><br>📌모집대상<br>: 만 18세 ~ 만 34세의 미취업 청년<br><br>📌교육 일정<br>&amp;nbsp;- 사전 교육(대면)<br>&amp;nbsp;: 25.04.15.(화) ~ 25.04.17.(목) 오전 10시 ~ 오후 4시<br>&amp;nbsp;- 일경험 프로젝트(자율)<br>&amp;nbsp;: 25.04.21.(월) ~ 25.06.01.(일)<br><br>📌사전 교육 장소<br>: 대전지식산업센터(대동역 1번 출구 1분 거리)<br><br>📢신청 바로가기(~4/6 접수 마감)<br>: https://abcbootcamp.kr/abc_education/abc_education_detail/EDUA_000000052/<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>- 문의처<br><br>1) 카카오채널: http://pf.kakao.com/_pDpyb<br><br>2) 유선전화: 042-335-6589<br><br><br>- ABC 부트캠프 공식 SNS 채널<br><br>1) 인스타그램: https://www.instagram.com/abcbootcamp.kr/<br><br>2) 네이버블로그: https://blog.naver.com/abc_bootcamp<br><br>3) 유튜브: https://youtube.com/@abcbootcamp<br><br><br></p>
                                             <script>
                                                 $(document).ready(function () {
@@ -499,15 +472,15 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 4월 3일</span>
                                             <ul class="li-tag">
-                                                
+                                                                                            
                                                 <li>#프로젝트멘토링</li>
                                                 
                                                 <li>#ABC 교육</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 4월 3일</span>
+                                           
                                         </div>
                                     </a>
                                 </li>
@@ -546,8 +519,6 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 4월 2일</span>
                                             <ul class="li-tag">
                                                 
                                                 <li>#프로젝트멘토링</li>
@@ -555,6 +526,8 @@
                                                 <li>#ABC 교육</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 4월 2일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -594,14 +567,15 @@
                                                 });
                                             </script>
 
-                                            <span class="li-date">2025년 3월 31일</span>
                                             <ul class="li-tag">
-                                                
+                                                                                            
                                                 <li>#프로젝트멘토링</li>
                                                 
                                                 <li>#보도자료</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 3월 31일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -640,15 +614,15 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 3월 27일</span>
                                             <ul class="li-tag">
-                                                
+                                                                                            
                                                 <li>#프로젝트멘토링</li>
                                                 
                                                 <li>#ABC 교육</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 3월 27일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -687,8 +661,6 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 3월 17일</span>
                                             <ul class="li-tag">
                                                 
                                                 <li>#프로젝트멘토링</li>
@@ -696,6 +668,8 @@
                                                 <li>#ABC 교육</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 3월 17일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -734,8 +708,6 @@
                                                     }
                                                 });
                                             </script>
-
-                                            <span class="li-date">2025년 3월 10일</span>
                                             <ul class="li-tag">
                                                 
                                                 <li>#프로젝트멘토링</li>
@@ -743,6 +715,8 @@
                                                 <li>#ABC 교육</li>
                                                 
                                             </ul>
+                                            <span class="li-date">2025년 3월 10일</span>
+                                            
                                         </div>
                                     </a>
                                 </li>
@@ -811,458 +785,623 @@
 
                 <!-- tab-2 -->
                 <div id="tab-2" class="tab-content current">
-                    <div class="photoboard">
-                        <ul class="list img-list" id="moreListTab2">
-                            
-                            <li onclick="location.href='post_detail/1931'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000001135" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">[3년 연속 우수] ABC 부트캠프 우수 교육프로그램 선정</h4>
-                                        <p id="nttCnHtmlTab21" class="li-summary"><br><br><br>&amp;nbsp;<br><br>🎉 24년도 ABC 부트캠프 우수 선정<br><br>💚 ABC 부트캠프가 고용노동부와 대한상공회의소에서 선정한 우수 교육으로 선정되었습니다!<br><br>이로써 ABC 부트캠프가 처음 시작되었던 22년부터 24년까지, 3년 연속으로 우수 교육 프로그램으로 선정되었습니다. 😎<br><br>25년도 ABC 부트캠프를 열심히 기획 중이니 25년도 ABC 부트캠프에서 만나요! 😉<br><br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab21").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab21").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab21").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2025년 1월 20일</span>
-                                        <ul class="li-tag">
+                    <div class="edu_list_box">
+                        <!-- tags -->
+                        <div class="tagall">
+                            <ul class="tagWrap">
+                                <li>
+                                    <a href="/abc_story/" class="tag_btn choice">#전체</a>
+                                </li>
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00001"
+                                            class="tag_btn ">
+                                                #보도자료
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00002"
+                                            class="tag_btn ">
+                                                #ESG 특강
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00004"
+                                            class="tag_btn ">
+                                                #2기 2회차
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00005"
+                                            class="tag_btn ">
+                                                #2기 1회차
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00006"
+                                            class="tag_btn ">
+                                                #1기
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00010"
+                                            class="tag_btn ">
+                                                #주니어 데이터 분석
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00011"
+                                            class="tag_btn ">
+                                                #ABC 부트캠프
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00013"
+                                            class="tag_btn ">
+                                                #서포터즈
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00015"
+                                            class="tag_btn ">
+                                                #7days
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00016"
+                                            class="tag_btn ">
+                                                #ABC 교육
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00017"
+                                            class="tag_btn ">
+                                                #2weeks
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00018"
+                                            class="tag_btn ">
+                                                #3기
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00019"
+                                            class="tag_btn ">
+                                                #프로젝트멘토링
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00020"
+                                            class="tag_btn ">
+                                                #4기
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00021"
+                                            class="tag_btn ">
+                                                #5기
+                                            </a>
+                                        </li>
+                                    
+                                
+                                    <!-- Check if tag is not '수료생 후기' -->
+                                        <li>
+                                            <a href="/abc_story/?tag=TAG_00022"
+                                            class="tag_btn ">
+                                                #데이터탐험가
+                                            </a>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </div>
+                        <!-- tags -->
+                        <div class="photoboard">
+                            <ul class="list img-list" id="moreListTab2">
+                                
+                                <li onclick="location.href='post_detail/1931'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                            <li>#ABC 교육</li>
+                                                <img src="/get_image/?fileId=FILE_000000000001135" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#ABC 부트캠프</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">[3년 연속 우수] ABC 부트캠프 우수 교육프로그램 선정</h4>
+                                            <p id="nttCnHtmlTab21" class="li-summary"><br><br><br>&amp;nbsp;<br><br>🎉 24년도 ABC 부트캠프 우수 선정<br><br>💚 ABC 부트캠프가 고용노동부와 대한상공회의소에서 선정한 우수 교육으로 선정되었습니다!<br><br>이로써 ABC 부트캠프가 처음 시작되었던 22년부터 24년까지, 3년 연속으로 우수 교육 프로그램으로 선정되었습니다. 😎<br><br>25년도 ABC 부트캠프를 열심히 기획 중이니 25년도 ABC 부트캠프에서 만나요! 😉<br><br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab21").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab21").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab21").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                                                        
+                                                <li>#ABC 교육</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                            </ul>
+                                            <span class="li-date">2025년 1월 20일</span>
                                             
-                                            <li>#수료생 후기</li>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1929'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1929'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000001130" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">[ABC 부트캠프 후기] 한눈에 보는 5기 &#x27;하이라이트&#x27;</h4>
-                                        <p id="nttCnHtmlTab22" class="li-summary"><br><br><br><br>﻿<br><br>&amp;nbsp;<br><br>📢 24년도 마지막 기수인 ABC 부트캠프 데이터 탐험가 5기의 활동 모습을 모아모아 하이라이트 영상을 준비했습니다!<br><br>&amp;nbsp;<br><br>기술 배움 트랙은 알겠는데 기술 나눔 트랙이 뭔지 궁금하다고요?<br><br>&amp;nbsp;<br><br>다른 기수에는 없는 기술 나눔 트랙 활동 모습이 담긴 후기 영상 함께 보시죠 🤗<br><br><br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>https://www.youtube.com/watch?v=Yfvj-v9jS7c&amp;amp;t=20s<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>- 문의처: 유클리드소프트 혁신역량교육팀<br><br>1) 카카오채널: http://pf.kakao.com/_pDpyb<br><br>2) 유선전화: 042-335-6589<br><br>​<br><br>- ABC 부트캠프 공식 SNS 채널<br><br>1) 인스타그램: https://www.instagram.com/abcbootcamp.kr/<br><br>2) 네이버블로그: https://blog.naver.com/abc_bootcamp<br><br>3) 유튜브: https://youtube.com/@abcbootcamp<br><br>﻿<br><br><br><br><br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab22").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab22").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab22").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2025년 1월 6일</span>
-                                        <ul class="li-tag">
+                                                <img src="/get_image/?fileId=FILE_000000000001130" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#5기</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">[ABC 부트캠프 후기] 한눈에 보는 5기 &#x27;하이라이트&#x27;</h4>
+                                            <p id="nttCnHtmlTab22" class="li-summary"><br><br><br><br>﻿<br><br>&amp;nbsp;<br><br>📢 24년도 마지막 기수인 ABC 부트캠프 데이터 탐험가 5기의 활동 모습을 모아모아 하이라이트 영상을 준비했습니다!<br><br>&amp;nbsp;<br><br>기술 배움 트랙은 알겠는데 기술 나눔 트랙이 뭔지 궁금하다고요?<br><br>&amp;nbsp;<br><br>다른 기수에는 없는 기술 나눔 트랙 활동 모습이 담긴 후기 영상 함께 보시죠 🤗<br><br><br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>https://www.youtube.com/watch?v=Yfvj-v9jS7c&amp;amp;t=20s<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>&amp;nbsp;<br><br>- 문의처: 유클리드소프트 혁신역량교육팀<br><br>1) 카카오채널: http://pf.kakao.com/_pDpyb<br><br>2) 유선전화: 042-335-6589<br><br>​<br><br>- ABC 부트캠프 공식 SNS 채널<br><br>1) 인스타그램: https://www.instagram.com/abcbootcamp.kr/<br><br>2) 네이버블로그: https://blog.naver.com/abc_bootcamp<br><br>3) 유튜브: https://youtube.com/@abcbootcamp<br><br>﻿<br><br><br><br><br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab22").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab22").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab22").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#5기</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                            </ul>
+                                            <span class="li-date">2025년 1월 6일</span>
                                             
-                                            <li>#ABC 부트캠프</li>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1901'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                            <li>#수료생 후기</li>
+                                                <img src="/get_image/?fileId=FILE_000000000001062" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1901'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000001062" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">[ABC 부트캠프 후기] 3기가 말하는 이것은?! | 3기 참여자의 솔직 인터뷰를 모아모아~ | ABC 부트캠프 과정, 프로젝트, 성장, 극복, 추천, 동기부여, 대상 받는 법</h4>
-                                        <p id="nttCnHtmlTab23" class="li-summary"><br><br><br>&amp;nbsp;<br><br>📢ABC 부트캠프 공식 홈페이지, 모집 포스터에 있는 정보 말고, &amp;quot;찐&amp;quot; 수강생들의 리뷰가 더 궁금하시다고요?<br><br>여러분의 궁금증을 해소해 드리기 위해, 3기 수강생들을 인터뷰해 보았습니다🤗<br><br>&amp;nbsp;<br><br>참여자들이 ABC 부트캠프를 끝마친 소감부터 자신의 성장 경험까지❗ 찐 참여자가 알려주는 ABC 부트캠프 이야기. 지금 들어보시죠!<br><br>&amp;nbsp;<br><br>여러분들의 궁금증 해결에 도움이 되었길 바랍니다😉<br><br>&amp;nbsp;<br><br>00:17 ABC 부트캠프를 끝마친 소감<br><br>00:52 프로젝트 대상이 말해주는 대상 받는 꿀팁🌟<br><br>01:14 ABC 부트캠프를 진행하면서 기억에 남는 순간<br><br>01:29 ABC 부트캠프, 이런 분께 추천합니다✨<br><br>02:05 ABC 부트캠프를 통해 배운 것 &amp;amp; 성장 경험🍀<br><br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab23").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab23").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab23").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2024년 9월 25일</span>
-                                        <ul class="li-tag">
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">[ABC 부트캠프 후기] 3기가 말하는 이것은?! | 3기 참여자의 솔직 인터뷰를 모아모아~ | ABC 부트캠프 과정, 프로젝트, 성장, 극복, 추천, 동기부여, 대상 받는 법</h4>
+                                            <p id="nttCnHtmlTab23" class="li-summary"><br><br><br>&amp;nbsp;<br><br>📢ABC 부트캠프 공식 홈페이지, 모집 포스터에 있는 정보 말고, &amp;quot;찐&amp;quot; 수강생들의 리뷰가 더 궁금하시다고요?<br><br>여러분의 궁금증을 해소해 드리기 위해, 3기 수강생들을 인터뷰해 보았습니다🤗<br><br>&amp;nbsp;<br><br>참여자들이 ABC 부트캠프를 끝마친 소감부터 자신의 성장 경험까지❗ 찐 참여자가 알려주는 ABC 부트캠프 이야기. 지금 들어보시죠!<br><br>&amp;nbsp;<br><br>여러분들의 궁금증 해결에 도움이 되었길 바랍니다😉<br><br>&amp;nbsp;<br><br>00:17 ABC 부트캠프를 끝마친 소감<br><br>00:52 프로젝트 대상이 말해주는 대상 받는 꿀팁🌟<br><br>01:14 ABC 부트캠프를 진행하면서 기억에 남는 순간<br><br>01:29 ABC 부트캠프, 이런 분께 추천합니다✨<br><br>02:05 ABC 부트캠프를 통해 배운 것 &amp;amp; 성장 경험🍀<br><br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab23").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab23").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab23").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#3기</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                            </ul>
+    
+                                            <span class="li-date">2024년 9월 25일</span>
                                             
-                                            <li>#3기</li>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1898'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                            <li>#ABC 부트캠프</li>
+                                                <img src="/get_image/?fileId=FILE_000000000001063" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#수료생 후기</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">[ABC 부트캠프 4기] 참여자들이 전하는 생생후기!</h4>
+                                            <p id="nttCnHtmlTab24" class="li-summary"><br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab24").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab24").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab24").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#4기</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                            </ul>
+    
+                                            <span class="li-date">2024년 9월 24일</span>
                                             
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1898'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000001063" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">[ABC 부트캠프 4기] 참여자들이 전하는 생생후기!</h4>
-                                        <p id="nttCnHtmlTab24" class="li-summary"><br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab24").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab24").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab24").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2024년 9월 24일</span>
-                                        <ul class="li-tag">
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1838'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                            <li>#4기</li>
+                                                <img src="/get_image/?fileId=FILE_000000000000812" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#ABC 부트캠프</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">ABC 부트캠프 2기 2회차 수료생 최윤하 고용노동부 장관상 수상</h4>
+                                            <p id="nttCnHtmlTab25" class="li-summary"><br>&amp;nbsp;<br><br><br><br>23년도 청년친화 ESG 지원사업 수기 공모전에서<br>최윤하 수료생이 고용노동부 장관상(우수상)을 수상했습니다! ✨<br>​<br>ABC 부트캠프의 이야기를 잘 들려준 최윤하 학생에게 고마움을 전합니다 👏<br>​<br>카카오채널(유클리드소프트 혁신역량교육팀)<br>http://pf.kakao.com/_pDpyb<br>&amp;nbsp;<br><br><br><br><br><br><br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab25").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab25").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab25").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#보도자료</li>
+                                                
+                                                <li>#2기 2회차</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                            </ul>
+    
+                                            <span class="li-date">2024년 2월 27일</span>
                                             
-                                            <li>#수료생 후기</li>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1830'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1838'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000000812" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">ABC 부트캠프 2기 2회차 수료생 최윤하 고용노동부 장관상 수상</h4>
-                                        <p id="nttCnHtmlTab25" class="li-summary"><br>&amp;nbsp;<br><br><br><br>23년도 청년친화 ESG 지원사업 수기 공모전에서<br>최윤하 수료생이 고용노동부 장관상(우수상)을 수상했습니다! ✨<br>​<br>ABC 부트캠프의 이야기를 잘 들려준 최윤하 학생에게 고마움을 전합니다 👏<br>​<br>카카오채널(유클리드소프트 혁신역량교육팀)<br>http://pf.kakao.com/_pDpyb<br>&amp;nbsp;<br><br><br><br><br><br><br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab25").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab25").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab25").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2024년 2월 27일</span>
-                                        <ul class="li-tag">
+                                                <img src="/get_image/?fileId=FILE_000000000000775" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#보도자료</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">'ABC 부트캠프' 2년 연속 우수 프로그램 선정…최고 프로그램으로 인정받아</h4>
+                                            <p id="nttCnHtmlTab26" class="li-summary"><br>▲ (사진=㈜유클리드소프트 제공)<br>&amp;nbsp;<br>[라온신문 장슬기 기자]&amp;nbsp;(주)유클리드소프트(이하 유클리드소프트)가 기획&amp;middot;운영한 ABC 부트캠프가 고용노동부 청년친화 ESG 지원사업에서 22년에 이어 2년 연속 우수 교육 프로그램으로 선정됐다고 5일 밝혔다.<br>&amp;nbsp;<br>우수 프로그램으로 선정된 유클리드소프트는 지난 12월에 JW 메리어트 동대문 스퀘어에서 개최한 &amp;lsquo;2023년 청년친화 ESG 지원사업 성과공유회&amp;rsquo;에 참석해 여러 프로그램을 대표해&amp;nbsp;우수 사례 발표를 진행했다.<br>&amp;nbsp;<br>이날 유클리드소프트 채은경 대표이사는 ABC 부트캠프의 차별화된 전략인 &amp;lsquo;기술 배움 트랙&amp;rsquo;과 &amp;lsquo;기술 나눔 트랙&amp;rsquo; 설명과 함께 수료생이 수료 후 정주 환경을 바라보는 시점이 어떻게 달라졌는지 수료생의 변화를 중심으로 사례 발표를 진행했다.<br>&amp;nbsp;<br><br><br>▲ (사진=㈜유클리드소프트 제공)<br>&amp;nbsp;<br>채은경 대표이사는 &amp;ldquo;ABC 부트캠프가 좋은 성과를 낼 수 있었던 것은 AI/SW 비전공자들도 맘껏 참여할 수 있는 차별화된 교육을 진행했기 때문이다. AI/SW는 더 이상 전공자만을 위한 기술이 아니다. ABC 부트캠프를 거쳐 간 수료생은 자신의 전공 도메인을 바탕으로 AI/SW 기술을 활용해 융합 인재로 성장하길 바란다&amp;rdquo;라고 발표했다.<br>&amp;nbsp;<br>ABC 부트캠프는 22년부터 23년까지 총 103명의 인원이 수료했으며, △성심당 △화이트 해커 진로 특강 △오! 대전 △빅데이터와 인공지능 특강 △따뜻한 기술 등 사회 인식 변화 및 진로 특강 포함 다양한 전문 분야를 알아갈 수 있는 ESG 특강을 40차례 진행했다.<br>&amp;nbsp;<br>한편 2년 연속 우수 평가를 받은 ABC 부트캠프는 24년에 3기 모집 예정이다.<br><br>즐거운 뉴스, 라온신문 RAONNEWS<br>&amp;nbsp;<br><br><br><br><br><br><br><br>&amp;nbsp;</p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab26").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab26").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab26").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#보도자료</li>
+                                                
+                                                <li>#2기 2회차</li>
+                                                
+                                                <li>#2기 1회차</li>
+                                                
+                                                <li>#1기</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                            </ul>
+    
+                                            <span class="li-date">2024년 1월 5일</span>
                                             
-                                            <li>#2기 2회차</li>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1829'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                            <li>#수료생 후기</li>
+                                                <img src="/get_image/?fileId=FILE_000000000000774" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#ABC 부트캠프</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">유클리드소프트, `2023 청년친화 ESG 지원사업 성과공유회`서 고용노동부 장관상 수상</h4>
+                                            <p id="nttCnHtmlTab27" class="li-summary"><br><br><br><br>(주)유클리드소프트(이하 유클리드소프트)가 지난달 21일 고용노동부가 한국경영자총협회, 한국산업인력공단과 함께 JW 메리어트 동대문 호텔에서 개최한 &amp;#39;2023년 청년친화 ESG 지원사업 성과공유회&amp;#39;에서 고용노동부 장관상을 수상했다고 4일 밝혔다<br><br>청년친화 ESG 지원사업은 기업이 인적, 물적 자원과 전문성을 활용하여 청년에게 다양한 일경험 프로그램을 제공하며, 정부가 일부 비용과 컨설팅을 지원하는 사업이다.<br><br>유클리드소프트가 주최하고 건양대학교 산학협력단이 컨소시엄으로 참여한 &amp;#39;ABC 부트캠프&amp;#39;는 대전&amp;middot;충청 지역 청년을 대상으로 한 융합인재 양성 프로그램으로, &amp;#39;기술 배움 트랙&amp;#39;과 &amp;#39;기술 나눔 트랙&amp;#39;으로 나누어 운영하여 지역 청년들에게 인공지능(AI)과 소프트웨어 관련 지식과 기술을 교육하고, 이를 지역 사회 문제를 해결하는데 활용하는 차별화된 프로그램을 기획?운영하여 높은 평가를 받았다.<br><br>유클리드소프트는 23년도 청년친화 ESG 지원사업에 참여하여 &amp;#39;ABC 부트캠프&amp;#39;로 고용노동부 장관상(3점)과 국무총리 표창(1점)을 수상하며 기업의 지역 사회 활동(일경험 제공), 청년들의 정주환경 인식 개선, 지역 문제 해결을 통한 취업 역량 강화 등에 공헌을 인정받았다.<br><br><br>이와 관련하여 사업총괄책임자이자 유클리드소프트 채은경 대표이사는 &amp;quot;지난해에 이어 올해도 큰 상을 수상하여 기쁘다. ABC 부트캠프를 통해 지역 내 많은 학생들이 정주환경 인식이 긍정적으로 변화돼 뿌듯하다. 또, 많은 기업들이 지역 청년들에게 더 다양한 일경험을 할 수 있도록 함께 동참해주었으면 한다. 앞으로도 지역 청년들에게 꾸준한 기회 제공과 더불어 지역 사회 발전에 기여하기 위해 계속해서 노력하겠다&amp;quot;고 전했다.<br><br>정래연기자<br>&amp;nbsp;<br><br><br><br><br><br><br>&amp;nbsp;<br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab27").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab27").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab27").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                                <li>#2기 1회차</li>
+                                                
+                                                <li>#2기 2회차</li>
+                                                
+                                                <li>#보도자료</li>
+                                                
+                                            </ul>
+    
+                                            <span class="li-date">2024년 1월 5일</span>
                                             
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1830'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000000775" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">'ABC 부트캠프' 2년 연속 우수 프로그램 선정…최고 프로그램으로 인정받아</h4>
-                                        <p id="nttCnHtmlTab26" class="li-summary"><br>▲ (사진=㈜유클리드소프트 제공)<br>&amp;nbsp;<br>[라온신문 장슬기 기자]&amp;nbsp;(주)유클리드소프트(이하 유클리드소프트)가 기획&amp;middot;운영한 ABC 부트캠프가 고용노동부 청년친화 ESG 지원사업에서 22년에 이어 2년 연속 우수 교육 프로그램으로 선정됐다고 5일 밝혔다.<br>&amp;nbsp;<br>우수 프로그램으로 선정된 유클리드소프트는 지난 12월에 JW 메리어트 동대문 스퀘어에서 개최한 &amp;lsquo;2023년 청년친화 ESG 지원사업 성과공유회&amp;rsquo;에 참석해 여러 프로그램을 대표해&amp;nbsp;우수 사례 발표를 진행했다.<br>&amp;nbsp;<br>이날 유클리드소프트 채은경 대표이사는 ABC 부트캠프의 차별화된 전략인 &amp;lsquo;기술 배움 트랙&amp;rsquo;과 &amp;lsquo;기술 나눔 트랙&amp;rsquo; 설명과 함께 수료생이 수료 후 정주 환경을 바라보는 시점이 어떻게 달라졌는지 수료생의 변화를 중심으로 사례 발표를 진행했다.<br>&amp;nbsp;<br><br><br>▲ (사진=㈜유클리드소프트 제공)<br>&amp;nbsp;<br>채은경 대표이사는 &amp;ldquo;ABC 부트캠프가 좋은 성과를 낼 수 있었던 것은 AI/SW 비전공자들도 맘껏 참여할 수 있는 차별화된 교육을 진행했기 때문이다. AI/SW는 더 이상 전공자만을 위한 기술이 아니다. ABC 부트캠프를 거쳐 간 수료생은 자신의 전공 도메인을 바탕으로 AI/SW 기술을 활용해 융합 인재로 성장하길 바란다&amp;rdquo;라고 발표했다.<br>&amp;nbsp;<br>ABC 부트캠프는 22년부터 23년까지 총 103명의 인원이 수료했으며, △성심당 △화이트 해커 진로 특강 △오! 대전 △빅데이터와 인공지능 특강 △따뜻한 기술 등 사회 인식 변화 및 진로 특강 포함 다양한 전문 분야를 알아갈 수 있는 ESG 특강을 40차례 진행했다.<br>&amp;nbsp;<br>한편 2년 연속 우수 평가를 받은 ABC 부트캠프는 24년에 3기 모집 예정이다.<br><br>즐거운 뉴스, 라온신문 RAONNEWS<br>&amp;nbsp;<br><br><br><br><br><br><br><br>&amp;nbsp;</p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab26").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab26").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab26").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2024년 1월 5일</span>
-                                        <ul class="li-tag">
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1828'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                            <li>#보도자료</li>
+                                                <img src="/get_image/?fileId=FILE_000000000000773" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#2기 2회차</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">ABC 부트캠프 데이터 탐험가 과정 우수 교육 프로그램 선정&고용노동부 장관상 수상</h4>
+                                            <p id="nttCnHtmlTab28" class="li-summary"><br><br><br><br><br><br><br>2023년 청년친화 ESG 지원사업의 일환으로 유클리드소프트에서 운영한<br>ABC 부트캠프 데이터 탐험가 과정이 고용노동부 장관상을 수상했습니다.<br>​<br>고용노동부 장관상은 우수 평가를 받은<br>최상위 교육 프로그램에게만 수여되는 상입니다. 👏<br>​<br>더불어, 최상위 교육 프로그램에게는<br>우수 사례 발표 기회가 주어지는데요.<br>​<br>유클리드소프트 채은경 대표이사님께서<br>ABC 부트캠프 운영 목적과 어떤 영향을 끼쳤는지 등<br>​<br>ABC 부트캠프가 우수 프로그램으로 선정 될 수 밖에 없던 이유를<br>고용노동부 장관과 언론사, 각 기업의 회장, 대표이사 및 실무진 등에게<br>알리는 우수 사례 발표를 진행하셨습니다.<br>​<br>2022년부터 2년 연속 우수 평가를 받은 것과 더불어<br>고용노동부 장관상까지 수상했네요!<br>​<br>23년 ABC 부트캠프에 참여해주신 교수진과 참여자<br>그리고 운영진 모두 수고 많으셨습니다.<br>​<br>ABC 부트캠프는 24년에도 계속됩니다. 🏕️<br><br><br><br><br><br><br>&amp;nbsp;<br><br><br><br><br><br><br><br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab28").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab28").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab28").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#2기 2회차</li>
+                                                
+                                                <li>#2기 1회차</li>
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                            </ul>
+    
+                                            <span class="li-date">2024년 1월 3일</span>
                                             
-                                            <li>#2기 1회차</li>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li onclick="location.href='post_detail/1827'">
+                                    <a href="#" class="inner"
+                                       onclick="typeDetail();return false;">
+                                        <div class="li-img">
                                             
-                                            <li>#1기</li>
+                                                <img src="/get_image/?fileId=FILE_000000000000772" alt="썸네일 이미지"> <!-- Updated this line -->
                                             
-                                            <li>#수료생 후기</li>
+                                        </div>
+    
+                                        <div class="li-text">
+                                            <h4 class="li-head">ABC 프로젝트 멘토링 참여 조 교육부 장관상(대상) 수상!</h4>
+                                            <p id="nttCnHtmlTab29" class="li-summary"><br><br><br><br>ABC 프로젝트 멘토링에 참여한 고 은, 전정기, 문준호, 오서현, 백정렬 5명의 학생이<br>제3회 소외계층을 위한 AI활용 아이디어 공모전에서 교육부 장관상(대상)을 수상했습니다!<br>​<br>위 조는 ABC 부트캠프 데이터 탐험가 과정<br>1기와 2기 수료생의 조합으로 이루어진 팀이었는데요!<br>​<br>1기와 2기의 시너지가 극대화 되어<br>공모전에서 최종 1등을 차지했습니다 👏<br>​<br>고생 많았습니다 💙<br>​<br>이로써, ABC 프로젝트 멘토링에 참여한 모든 조들이<br>모두 각 대회 1등을 차지했네요 ✨<br>​<br>ABC 프로젝트 멘토링은 추후에도 계속됩니다!<br>​<br>추후, 모집 시 ABC 부트캠프 SNS에 안내 예정입니다 📢<br><br>http://pf.kakao.com/_pDpyb<br>&amp;nbsp;<br><br><br><br><br><br><br></p>
+                                            <script>
+                                                $(document).ready(function () {
+                                                    var originCn = $("#nttCnHtmlTab29").text();
+                                                    var cleanText = originCn.replace(/&nbsp;/gi, ' ')
+                                                        .replace(/&middot;/gi, '')
+                                                        .replace(/&#39;/gi, '')
+                                                        .replace(/&zwj;/gi, '')
+                                                        .replace(/&quot;/gi, '')
+                                                        .replace(/&lt;/gi, '')
+                                                        .replace(/\\/g, '')
+                                                        .replace(/&amp;quot;/gi, '')
+                                                        .replace(/&amp;/gi, '')
+                                                        .replace(/&rsquo;/gi, '');
+                                                    if (cleanText.length > 80) {
+                                                        var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
+                                                        $("#nttCnHtmlTab29").text(trimmedString); // Update the paragraph text
+                                                    } else {
+                                                        $("#nttCnHtmlTab29").text(cleanText); // If less than 80 chars, just replace &nbsp;
+                                                    }
+                                                });
+                                            </script>
+                                            <ul class="li-tag">
+                                                
+                                                <li>#수료생 후기</li>
+                                                
+                                                <li>#ABC 부트캠프</li>
+                                                
+                                                <li>#ABC 교육</li>
+                                                
+                                            </ul>
+    
+                                            <span class="li-date">2024년 1월 3일</span>
                                             
-                                            <li>#ABC 부트캠프</li>
-                                            
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1829'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000000774" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">유클리드소프트, `2023 청년친화 ESG 지원사업 성과공유회`서 고용노동부 장관상 수상</h4>
-                                        <p id="nttCnHtmlTab27" class="li-summary"><br><br><br><br>(주)유클리드소프트(이하 유클리드소프트)가 지난달 21일 고용노동부가 한국경영자총협회, 한국산업인력공단과 함께 JW 메리어트 동대문 호텔에서 개최한 &amp;#39;2023년 청년친화 ESG 지원사업 성과공유회&amp;#39;에서 고용노동부 장관상을 수상했다고 4일 밝혔다<br><br>청년친화 ESG 지원사업은 기업이 인적, 물적 자원과 전문성을 활용하여 청년에게 다양한 일경험 프로그램을 제공하며, 정부가 일부 비용과 컨설팅을 지원하는 사업이다.<br><br>유클리드소프트가 주최하고 건양대학교 산학협력단이 컨소시엄으로 참여한 &amp;#39;ABC 부트캠프&amp;#39;는 대전&amp;middot;충청 지역 청년을 대상으로 한 융합인재 양성 프로그램으로, &amp;#39;기술 배움 트랙&amp;#39;과 &amp;#39;기술 나눔 트랙&amp;#39;으로 나누어 운영하여 지역 청년들에게 인공지능(AI)과 소프트웨어 관련 지식과 기술을 교육하고, 이를 지역 사회 문제를 해결하는데 활용하는 차별화된 프로그램을 기획?운영하여 높은 평가를 받았다.<br><br>유클리드소프트는 23년도 청년친화 ESG 지원사업에 참여하여 &amp;#39;ABC 부트캠프&amp;#39;로 고용노동부 장관상(3점)과 국무총리 표창(1점)을 수상하며 기업의 지역 사회 활동(일경험 제공), 청년들의 정주환경 인식 개선, 지역 문제 해결을 통한 취업 역량 강화 등에 공헌을 인정받았다.<br><br><br>이와 관련하여 사업총괄책임자이자 유클리드소프트 채은경 대표이사는 &amp;quot;지난해에 이어 올해도 큰 상을 수상하여 기쁘다. ABC 부트캠프를 통해 지역 내 많은 학생들이 정주환경 인식이 긍정적으로 변화돼 뿌듯하다. 또, 많은 기업들이 지역 청년들에게 더 다양한 일경험을 할 수 있도록 함께 동참해주었으면 한다. 앞으로도 지역 청년들에게 꾸준한 기회 제공과 더불어 지역 사회 발전에 기여하기 위해 계속해서 노력하겠다&amp;quot;고 전했다.<br><br>정래연기자<br>&amp;nbsp;<br><br><br><br><br><br><br>&amp;nbsp;<br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab27").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab27").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab27").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2024년 1월 5일</span>
-                                        <ul class="li-tag">
-                                            
-                                            <li>#ABC 부트캠프</li>
-                                            
-                                            <li>#수료생 후기</li>
-                                            
-                                            <li>#2기 1회차</li>
-                                            
-                                            <li>#2기 2회차</li>
-                                            
-                                            <li>#보도자료</li>
-                                            
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1828'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000000773" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">ABC 부트캠프 데이터 탐험가 과정 우수 교육 프로그램 선정&고용노동부 장관상 수상</h4>
-                                        <p id="nttCnHtmlTab28" class="li-summary"><br><br><br><br><br><br><br>2023년 청년친화 ESG 지원사업의 일환으로 유클리드소프트에서 운영한<br>ABC 부트캠프 데이터 탐험가 과정이 고용노동부 장관상을 수상했습니다.<br>​<br>고용노동부 장관상은 우수 평가를 받은<br>최상위 교육 프로그램에게만 수여되는 상입니다. 👏<br>​<br>더불어, 최상위 교육 프로그램에게는<br>우수 사례 발표 기회가 주어지는데요.<br>​<br>유클리드소프트 채은경 대표이사님께서<br>ABC 부트캠프 운영 목적과 어떤 영향을 끼쳤는지 등<br>​<br>ABC 부트캠프가 우수 프로그램으로 선정 될 수 밖에 없던 이유를<br>고용노동부 장관과 언론사, 각 기업의 회장, 대표이사 및 실무진 등에게<br>알리는 우수 사례 발표를 진행하셨습니다.<br>​<br>2022년부터 2년 연속 우수 평가를 받은 것과 더불어<br>고용노동부 장관상까지 수상했네요!<br>​<br>23년 ABC 부트캠프에 참여해주신 교수진과 참여자<br>그리고 운영진 모두 수고 많으셨습니다.<br>​<br>ABC 부트캠프는 24년에도 계속됩니다. 🏕️<br><br><br><br><br><br><br>&amp;nbsp;<br><br><br><br><br><br><br><br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab28").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab28").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab28").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2024년 1월 3일</span>
-                                        <ul class="li-tag">
-                                            
-                                            <li>#2기 2회차</li>
-                                            
-                                            <li>#2기 1회차</li>
-                                            
-                                            <li>#수료생 후기</li>
-                                            
-                                            <li>#ABC 부트캠프</li>
-                                            
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                            <li onclick="location.href='post_detail/1827'">
-                                <a href="#" class="inner"
-                                   onclick="typeDetail();return false;">
-                                    <div class="li-img">
-                                        
-                                            <img src="/get_image/?fileId=FILE_000000000000772" alt="썸네일 이미지"> <!-- Updated this line -->
-                                        
-                                    </div>
-
-                                    <div class="li-text">
-                                        <h4 class="li-head">ABC 프로젝트 멘토링 참여 조 교육부 장관상(대상) 수상!</h4>
-                                        <p id="nttCnHtmlTab29" class="li-summary"><br><br><br><br>ABC 프로젝트 멘토링에 참여한 고 은, 전정기, 문준호, 오서현, 백정렬 5명의 학생이<br>제3회 소외계층을 위한 AI활용 아이디어 공모전에서 교육부 장관상(대상)을 수상했습니다!<br>​<br>위 조는 ABC 부트캠프 데이터 탐험가 과정<br>1기와 2기 수료생의 조합으로 이루어진 팀이었는데요!<br>​<br>1기와 2기의 시너지가 극대화 되어<br>공모전에서 최종 1등을 차지했습니다 👏<br>​<br>고생 많았습니다 💙<br>​<br>이로써, ABC 프로젝트 멘토링에 참여한 모든 조들이<br>모두 각 대회 1등을 차지했네요 ✨<br>​<br>ABC 프로젝트 멘토링은 추후에도 계속됩니다!<br>​<br>추후, 모집 시 ABC 부트캠프 SNS에 안내 예정입니다 📢<br><br>http://pf.kakao.com/_pDpyb<br>&amp;nbsp;<br><br><br><br><br><br><br></p>
-                                        <script>
-                                            $(document).ready(function () {
-                                                var originCn = $("#nttCnHtmlTab29").text();
-                                                var cleanText = originCn.replace(/&nbsp;/gi, ' ')
-                                                    .replace(/&middot;/gi, '')
-                                                    .replace(/&#39;/gi, '')
-                                                    .replace(/&zwj;/gi, '')
-                                                    .replace(/&quot;/gi, '')
-                                                    .replace(/&lt;/gi, '')
-                                                    .replace(/\\/g, '')
-                                                    .replace(/&amp;quot;/gi, '')
-                                                    .replace(/&amp;/gi, '')
-                                                    .replace(/&rsquo;/gi, '');
-                                                if (cleanText.length > 80) {
-                                                    var trimmedString = cleanText.substr(0, 65).trim() + '...'; // Trim to 80 characters and add ellipsis
-                                                    $("#nttCnHtmlTab29").text(trimmedString); // Update the paragraph text
-                                                } else {
-                                                    $("#nttCnHtmlTab29").text(cleanText); // If less than 80 chars, just replace &nbsp;
-                                                }
-                                            });
-                                        </script>
-
-                                        <span class="li-date">2024년 1월 3일</span>
-                                        <ul class="li-tag">
-                                            
-                                            <li>#수료생 후기</li>
-                                            
-                                            <li>#ABC 부트캠프</li>
-                                            
-                                            <li>#ABC 교육</li>
-                                            
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            
-                        </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- photoboard end -->
                     </div>
-                    <!-- photoboard end -->
                     <div class="paging">
                         <div class="boardbtn">
                             <div class="pagination page">
