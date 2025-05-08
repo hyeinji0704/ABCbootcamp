@@ -5091,6 +5091,10 @@ textarea {
 .edu_btn_disable {
     background: #dadada;
     color: #A3A3A3;
+    pointer-events : none;
+}
+.edu_btn_disable:hover {
+    background: #dadada;
 }
 
 
@@ -5254,7 +5258,7 @@ textarea {
     display: block;
     color: #41C5E5;
 }
-.edu_datail_floater .edu_float_btn {
+.edu_float_btn {
     display: block;
     width: 25%;
     padding: 14px 24px;
@@ -5266,9 +5270,11 @@ textarea {
     transition: all 0.3s;
     cursor: pointer;
 }
-.edu_datail_floater .edu_float_btn:hover {
+.edu_float_btn:hover {
     background: linear-gradient(90deg, #0c36b6 0%, #041e70 100%);
 }
+
+
 .edu_que_lists {
     padding: 8px 0;
     display: flex;
