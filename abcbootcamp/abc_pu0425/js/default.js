@@ -228,7 +228,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// FAQ 아코디언
+// FAQ 아코디언 클래스
 class Accordion {
     constructor(options) {
         // 기본 옵션과 사용자 지정 옵션을 병합
@@ -255,28 +255,23 @@ class Accordion {
         const targetLi = event.target.parentNode;
 
         // 멀티 오픈을 허용하지 않으면 타깃 이외의 모든 서브메뉴를 클로즈한다.
-        //   if (!this.config.multi) {
-        //     [].filter.call(
-        //       this.accordion.childNodes,
-        //       li => li.nodeType === Node.ELEMENT_NODE && li !== targetLi
-        //     ).forEach(li => li.classList.remove('show'));
-        //   }
+        if (!this.config.multi) {
+            [].filter.call(
+                this.accordion.childNodes,
+                li => li.nodeType === Node.ELEMENT_NODE && li !== targetLi
+            ).forEach(li => li.classList.remove('show'));
+        }
 
         // li 요소의 class에 "show"가 있으면 제거하고 없으면 추가한다.
         targetLi.classList.toggle('show');
     }
 }
 
-window.onload = function () {
-    const accordion = new Accordion({multi: false});
-// const accordion = new Accordion();
-};
-
-// 신청하기 자주 묻는 질문
-class edu_que_lists {
+// 신청하기 자주 묻는 질문 클래스
+class EduQueLists {
     constructor(options) {
         // 기본 옵션과 사용자 지정 옵션을 병합
-        this.config = edu_que_lists.mergeConfig(options);
+        this.config = EduQueLists.mergeConfig(options);
         this.accordion = document.querySelector(this.config.selector);
         
         // 요소가 존재하는지 확인
@@ -318,6 +313,15 @@ class edu_que_lists {
         targetQueList.classList.toggle('list_show');
     }
 }
+
+// 페이지 로드 시 두 아코디언 모두 초기화
+document.addEventListener('DOMContentLoaded', function() {
+    // 기본 아코디언 초기화
+    const accordion = new Accordion({multi: false});
+    
+    // 교육 질문 아코디언 초기화
+    const eduAccordion = new EduQueLists({multi: false});
+});
 
 window.onload = function () {
     const accordion = new edu_que_lists({multi: false});

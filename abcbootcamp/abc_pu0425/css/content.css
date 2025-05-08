@@ -5088,12 +5088,9 @@ textarea {
 .edu_btn:hover {
     background: linear-gradient(90deg, #052999 0%, #041e70 100%);
 }
-
-
 .edu_btn_disable {
-    background-color: #d3d3d3;
-    border: none;
-    color: #888;
+    background: #dadada;
+    color: #A3A3A3;
 }
 
 
@@ -5383,9 +5380,52 @@ textarea {
     .edu_detail_wrap .info_box {
         margin-bottom: 10px;
     }
+    .edu_datail_floater .edu_float_text {
+        font-size: 16px;
+    }
+    .edu_datail_floater {
+        flex-direction: column;
+        gap: 8px;
+        padding: 20px 40px;
+    }
+    .edu_que_txt > i {
+        font-size: 18px;
+    }
+    .edu_que_txt {
+        font-size: 18px;
+    }
+    .edu_detail_box .edu_content_title {
+        font-size: 1.6rem;
+        gap: 6px;
+    }
+    .edu_detail_box .edu_content_title img {
+        transform: scale(0.85);
+    }
 }
-
-
+@media (max-width: 500px) {
+    .edu_detail_wrap .edu_title {
+        font-size: 28px;
+    }
+    .edu_detail_wrap .li-tag > li {
+        font-size: 15px;
+    }
+    .edu_btn {
+        height: 50px;
+        font-size: 16px;
+    }
+    .edu_detail_wrap .edu_sub_info {
+        font-size: 15px;
+    }
+    .edu_detail_wrap .edu_sub_title {
+        font-size: 15px;
+    }
+    .edu_detail_wrap .edu_ul {
+        padding: 14px;
+    }
+    .edu_detail_box .edu_content_title {
+        font-size: 1.4rem;
+    }
+}
 /* ABC 교육 디테일 */
 
 /* ABC 교육 */

@@ -723,6 +723,10 @@
 .float_button:hover {
     background: linear-gradient(90deg, #0c36b6 0%, #041e70 100%);
 }
+.float_button_disable {
+    background: #4F4F59;
+    color: #e4e4e4;
+}
 @media (max-width: 1024px) {
     .applfloater {
         gap: 2em;
@@ -731,25 +735,41 @@
 }
 @media (max-width: 768px) {
     .applfloater {
-        max-width: auto;
         bottom: 0;
         border-radius: 0;
         background: linear-gradient(90deg, rgba(18, 34, 79, 0.8) 0%, rgba(20, 29, 55, 0.8) 90%, rgba(22, 23, 19, 0.8) 100%);
         backdrop-filter: blur(30px);
+        flex-direction: column;
+        gap: 12px;
+        height: 120px;
+        padding: 20px;
     }
     .float_text {
-        font-size: 15px;
+        font-size: 16px;
     }
     .float_button {
-        width: 160px;
+        width: 100%;
         font-size: 14px;
     }
 }
 @media (max-width: 580px) {
     .applfloater {
-        flex-direction: column;
-        gap: 10px;
-        height: 120px;
+        height: auto;
+    }
+    .float_text {
+        font-size: 14px;
+    }
+    .float_button {
+        padding: 6px 24px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 480px) {
+    .float_text {
+        font-size: 13px;
+    }
+    .float_button {
+        font-size: 13px;
     }
 }
 
